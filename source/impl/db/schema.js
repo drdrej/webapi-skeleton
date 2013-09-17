@@ -1,5 +1,5 @@
 /**
- * Installiert das Schema.
+ * Install Schema.
  *
  * @author: A. Siebert, ask@touchableheroes.com
  */
@@ -8,10 +8,10 @@ var Schema = mongoose.Schema;
 
 
 /**
- * Installier das Schema zu einem vorgegebenem Schemanamen.
+ * Install Schema for a passed Schema-Namen.
  *
- * @param name, der Name des Schema, nie NULL.
- * @returns {*} die Model-Instanz, nie NULL.
+ * @param name, never NULL.
+ * @returns {*} die Model-Instance, never NULL.
  */
 exports.install = function ( name ) {
     var SchemaType = resolveSchemaType( name );
@@ -21,7 +21,7 @@ exports.install = function ( name ) {
 };
 
 function resolveSchemaType( name ) {
-    var path = "../config/database/" + name + ".schema.json";
+    var path = "../../config/database/" + name + ".schema.json";
     var json = require( path );
 
     var schemaDef = new Schema( json );

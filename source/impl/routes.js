@@ -9,7 +9,7 @@ var _ = require( 'underscore' );
 /**
  * main method
  *
- * @param server niemals NULL. sonst exception/error.
+ * @param server never NULL.
  * @return void
  */
 exports.init = function( server, path ) {
