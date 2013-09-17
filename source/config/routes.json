@@ -1,0 +1,9 @@
+{
+    "routes" :  [
+        {
+            "entry" : "/hello/:name",
+            "method" : "get",
+            "control" : "/hello"
+        }
+    ]
+}
