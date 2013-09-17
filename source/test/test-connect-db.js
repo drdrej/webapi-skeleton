@@ -16,12 +16,9 @@ var api = require( "../index.js" );
 describe( 'database-check', function() {
 
      before(function(done) {
-        // if (mongoose.connection.db)
-        //    return done();
-
-        // mongoose.connect(dbURI, done);
-
-        api.db(dbURI).connect( done );
+        api.db(dbURI).connect( function(connection) {
+             done();
+        } );
     });
 
     describe('if db is running, mongoose should work', function() {
@@ -31,8 +28,5 @@ describe( 'database-check', function() {
            done();
         });
     });
-
-    // after( function(done))
-    // afterEach( function(done)
 
 });

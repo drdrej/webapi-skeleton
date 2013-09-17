@@ -21,6 +21,6 @@ exports.connect = function ( url, isReady ) {
         console.log( "-- DB connected." );
 
         if( isReady && _.isFunction(isReady) )
-            isReady();
+            isReady( db ); // pass db-connection
     });
 }
