@@ -2,7 +2,9 @@
  * API
  */
 
-module.server = require( "./impl/server.js" );
+exports.server = require( "./impl/server.js" );
 
-
-// module.db =
+exports.db = function () {
+    this.connection = require("./impl/db/connect.js" );
+    this.schema = require( "./impl/db/schema.js" );
+};
