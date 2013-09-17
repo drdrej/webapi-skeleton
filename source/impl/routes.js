@@ -15,13 +15,13 @@ var _ = require( 'underscore' );
  *
  * @return void
  */
-exports.init = function( server, config, controls ) {
+exports.init = function( server, routesPrefix, controlsPrefix ) {
     var path = "";
 
-    if( config == null || !_.isString(config) ) {
+    if( routesPrefix == null || !_.isString(routesPrefix) ) {
         path = "../config/routes.json";
     } else {
-        path = config + "/routes.json";
+        path = routesPrefix + "/routes.json";
     }
 
     console.log( "-- use { path : " + path + " } to config routes." );
@@ -32,7 +32,7 @@ exports.init = function( server, config, controls ) {
 
     _.each( routes, function(route, index) {
         console.log( "-- init route [" + index + "]: " + route.entry );
-        var control = load( route );
+        var control = load( route, index, controlsPrefix );
         bind(server, route, control);
     });
 };
