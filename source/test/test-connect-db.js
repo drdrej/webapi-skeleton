@@ -25,32 +25,13 @@ describe( 'database-check', function() {
 
     describe('if db is running, mongoose should work', function() {
        it('should get a 200 response', function(done) {
-            // setTimeout(15000);
-            //                   'mongodb://localhost/knappschaftDB'
-            // mongoose.connect( 'mongodb://localhost/knappschaftDB' );
-
-            /*
-            connection.connect( 'mongodb://localhost/knappschaftDB' );
-            */
-            // mongoose.connect('mongodb://localhost/myapp');
-
             console.log( "-- connect database" );
-
-
-            /* client.get('/hello/world', function(err, req, res, data) {
-                if (err)
-                    throw new Error(err);
-
-                assert.equal( 200, data.code );
-                assert.equal( "hello world", data.message );
-
-                done();
-            }); */
 
            done();
         });
     });
 
-    // after( function())
+    // after( function(done))
+    // afterEach( function(done)
 
 });
