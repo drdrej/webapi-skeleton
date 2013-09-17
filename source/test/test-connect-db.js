@@ -9,21 +9,30 @@
 // var connection = require( "../impl/db/connect.js" );
 
 var dbURI    = 'mongodb://localhost/restAPP';
+var dbConfigPrefix = __dirname + "/../config/database";
 
 var api = require( "../index.js" );
 
 
 describe( 'database-check', function() {
 
-     before(function(done) {
-        api.db(dbURI).connect( function(connection) {
+    var dbFacade = api.db(dbURI, dbConfigPrefix);
+
+    before(function(done) {
+        dbFacade.connect( function(connection) {
              done();
         } );
     });
 
-    describe('if db is running, mongoose should work', function() {
+    describe('Hello.Schema exists', function() {
+       console.log( "-- test ready" );
+
+
        it('should get a 200 response', function(done) {
-            console.log( "-- connect database" );
+           console.log( "-- connect database" );
+
+           var Hello = dbFacade.schema( "hello" );
+
 
            done();
         });

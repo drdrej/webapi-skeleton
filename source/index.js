@@ -3,7 +3,7 @@
  */
 
 
-var CONFIG_PATH = "./config";
+exports.CONFIG_PATH = "./config";
 
 /**
  * to setup config-directory for the app/server.
@@ -21,14 +21,22 @@ exports.server = require( "./impl/server.js" );
  *
  * @returns DB-definition.
  */
-exports.db = function ( uri ) {
+exports.db = function ( uri, schemaConfigPathPrefix ) {
 
     this.connect = function( callback ) {
         var connect = require("./impl/db/connect.js").connect;
         connect(uri, callback);
     };
 
-    this.schema = require( "./impl/db/schema.js" );
+    this.schema = function( name ) {
+        var schemaImpl = require( "./impl/db/schema.js").install;
+
+
+        console.log( "schema created :::: %j ", schemaImpl );
+        return schemaImpl( schemaConfigPathPrefix, name );
+
+        return null;
+    }
 
     return this;
 };
