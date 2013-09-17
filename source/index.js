@@ -16,7 +16,19 @@ exports.useConfig = function( path ) {
 
 exports.server = require( "./impl/server.js" );
 
-exports.db = function () {
-    this.connection = require("./impl/db/connect.js" );
+/**
+ * DB-API
+ *
+ * @returns DB-definition.
+ */
+exports.db = function ( uri ) {
+
+    this.connect = function( callback ) {
+        var connect = require("./impl/db/connect.js").connect;
+        connect(uri, callback);
+    };
+
     this.schema = require( "./impl/db/schema.js" );
+
+    return this;
 };

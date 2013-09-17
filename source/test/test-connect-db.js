@@ -5,22 +5,23 @@
  * @author: A. Siebert, ask@touchableheroes.com
  */
 
-var mongoose = require('mongoose');
-var connection = require( "../impl/db/connect.js" );
+// var mongoose = require('mongoose');
+// var connection = require( "../impl/db/connect.js" );
 
 var dbURI    = 'mongodb://localhost/restAPP';
+
+var api = require( "../index.js" );
 
 
 describe( 'database-check', function() {
 
      before(function(done) {
-        this.timeout(15000);
+        // if (mongoose.connection.db)
+        //    return done();
 
-        if (mongoose.connection.db)
-            return done();
+        // mongoose.connect(dbURI, done);
 
-        // asynchronous call:
-        mongoose.connect(dbURI, done);
+        api.db(dbURI).connect( done );
     });
 
     describe('if db is running, mongoose should work', function() {
