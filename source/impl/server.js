@@ -6,11 +6,16 @@
  */
 var restify = require('restify');
 
-exports.startServer = function() {
+/**
+ * starts the server.
+ *
+ * @param path - path to routes.json
+ */
+exports.start = function( path ) {
     var server = restify.createServer();
 
     var routes = require("./routes.js");
-    routes.init( server );
+    routes.init( server, path );
 
     gogogo(server, 8080);
 };

@@ -15,8 +15,9 @@ var _ = require( 'underscore' );
 exports.init = function( server, path ) {
     if( path == null || !_.isString(path) ) {
         path = "../config/routes.json";
-        console.log( "-- use default { path : " + path + " } to config routes" );
     }
+
+    console.log( "-- use { path : " + path + " } to config routes." );
 
     var config = require( path );
 
