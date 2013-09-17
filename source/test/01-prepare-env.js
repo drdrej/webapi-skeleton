@@ -11,7 +11,7 @@ before( function(done) {
     console.log( "-- prepare environment." );
 
     var rest = require('../impl/server.js');
-    rest.startServer();
+    rest.start();
 
     done();
 });

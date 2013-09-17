@@ -10,11 +10,18 @@ var _ = require( 'underscore' );
  * main method
  *
  * @param server never NULL.
+ * @param config - path to config-folder.
+ * @param controls - path to controls-folder.
+ *
  * @return void
  */
-exports.init = function( server, path ) {
-    if( path == null || !_.isString(path) ) {
+exports.init = function( server, config, controls ) {
+    var path = "";
+
+    if( config == null || !_.isString(config) ) {
         path = "../config/routes.json";
+    } else {
+        path = config + "/routes.json";
     }
 
     console.log( "-- use { path : " + path + " } to config routes." );
@@ -38,9 +45,12 @@ exports.init = function( server, path ) {
  * loads the implementation (called control) of a route.
  *
  * @param route, never NULL
+ * @param index
+ * @param controls - path to controls-folder. never NULL
+ *
  * @return implementation of the passed route. never NULL.
  */
-function load( route, index ) {
+function load( route, index, controls ) {
     // checks && asserts :::
 
     if( !_.isObject(route) ) {
@@ -48,7 +58,14 @@ function load( route, index ) {
         return null;
     }
 
-    var controlPath =  "./controls" + route.control + ".js";
+    var pathPrefix;
+
+    if( controls == null || !_.isString(controls) )
+        pathPrefix =  "./controls";
+    else
+        pathPrefix = controls;
+
+    var controlPath =  pathPrefix + route.control + ".js";
     console.log( "-- load control by { path : " + controlPath + "}." );
     var control = require( controlPath );
     console.log( "-- control loaded");

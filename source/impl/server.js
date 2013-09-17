@@ -11,11 +11,11 @@ var restify = require('restify');
  *
  * @param path - path to routes.json
  */
-exports.start = function( path ) {
+exports.start = function( path, controlsPrefix ) {
     var server = restify.createServer();
 
     var routes = require("./routes.js");
-    routes.init( server, path );
+    routes.init( server, path, controlsPrefix );
 
     gogogo(server, 8080);
 };
