@@ -21,6 +21,6 @@ exports.connect = function ( url, callback ) {
         console.log( "-- open connection successful." );
 
         if( callback && _.isFunction(callback) )
-            callback();
+            callback( db );
     });
 }
