@@ -10,7 +10,7 @@ assert = require( 'assert' );
 before( function(done) {
     console.log( "-- prepare environment." );
 
-    var rest = require('../impl/start-server.js');
+    var rest = require('../impl/server.js');
     rest.startServer();
 
     done();
