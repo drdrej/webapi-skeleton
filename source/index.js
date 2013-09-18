@@ -48,8 +48,7 @@ exports.setup = function( options ) {
 exports.server = function () {
     this.start = function() {
        var startServer = require( "./impl/server.js").start;
-        path, controlsPrefix;
-        startServer( CONFIG.path, CONFIG.controls );
+       startServer( CONFIG.path, CONFIG.controls );
     };
 }
 
@@ -75,8 +74,6 @@ exports.db = function () {
 
         console.log( "schema created :::: %j ", schemaImpl );
         return schemaImpl( schemaConfigPathPrefix, name );
-
-        return null;
     }
 
     return this;

@@ -1,6 +1,6 @@
 {
   "name": "node-restserver-skeleton",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "basic rest-server based on nodejs, restify & mongoose",
   "readmeFilename": "README.md",
   "main": "index.js",
@@ -21,6 +21,7 @@
     "app",
     "skeleton"
   ],
+
   "author": "drdrej",
   "license": "Apache License 2"
 }
