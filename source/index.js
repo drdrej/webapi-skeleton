@@ -50,6 +50,8 @@ exports.server = function () {
        var startServer = require( "./impl/server.js").start;
        startServer( CONFIG.path, CONFIG.controls );
     };
+
+    return this;
 }
 
 /**
