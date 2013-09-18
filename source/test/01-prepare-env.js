@@ -1,5 +1,8 @@
 /**
- * Kein Test. Startet den server, bevor andere mocha-tests ausgeführt werden können.
+ * Kein Test.
+ *
+ * Startet den server, bevor andere mocha-tests ausgeführt werden können.
+ * Wird für die Tests der Schnittstellen benötigt.
  *
  * @type {*}
  */
