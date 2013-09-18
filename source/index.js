@@ -54,6 +54,15 @@ exports.server = function () {
     return this;
 }
 
+
+/**
+ * registred models.
+ *    <name> : <model>
+ */
+var SCHEMA_REGISRRY = {
+
+};
+
 /**
  * DB-API
  *
@@ -71,12 +80,27 @@ exports.db = function () {
     };
 
     this.schema = function( name ) {
+        var rval = SCHEMA_REGISRRY[ name ];
+
+        // REMOVE: console.log(  "-- found model for name: " + name + " ::: use model: %j " + rval );
+
+        // (re)-use model if possible :::
+        if( rval ) {
+
+            console.log( "-- model for {name : " + name + "} " );
+            return rval;
+        }
+
+        // register & use model :::
         var schemaImpl = require( "./impl/db/schema.js").install;
+        console.log( "-- schema created ::: ", name );
 
+        // cache compiled model :::
+        var rval = schemaImpl( schemaConfigPathPrefix, name );
+        SCHEMA_REGISRRY[ name ] = rval;
 
-        console.log( "schema created :::: %j ", schemaImpl );
-        return schemaImpl( schemaConfigPathPrefix, name );
-    }
+        return rval;
+    };
 
     return this;
 };

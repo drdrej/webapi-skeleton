@@ -5,11 +5,7 @@
  * @author: A. Siebert, ask@touchableheroes.com
  */
 
-// var mongoose = require('mongoose');
-// var connection = require( "../impl/db/connect.js" );
-
-// var dbURI    = ;
-// var dbConfigPrefix = ;
+var assert = require( "assert" );
 
 var api = require( "../index.js" );
 
@@ -39,7 +35,9 @@ describe( 'database-check', function() {
            console.log( "-- connect database" );
 
            var Hello = dbFacade.schema( "hello" );
+           var Hello2 = dbFacade.schema( "hello" );
 
+           assert.equal( Hello, Hello2, "-- Second call should return the same model-object." );
 
            done();
         });
