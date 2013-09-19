@@ -1,5 +1,7 @@
 /**
  * Hello-World-Basis-Test.
+ *
+ * @author: A. Siebert, ask@touchableheroes.com
  */
 
 var assert = require("assert");
