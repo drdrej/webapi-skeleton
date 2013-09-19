@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8f1345-11df-4368-be52-8ca26f76720d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/server.js" afterPath="$PROJECT_DIR$/source/impl/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/package.json" afterPath="$PROJECT_DIR$/source/package.json" />
     </list>
     <ignored path="node-restserver-skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,10 +105,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/impl/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.2756892">
+            <state line="15" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="0.09115282">
               <folding />
             </state>
           </provider>
@@ -164,8 +172,8 @@
         <option value="$PROJECT_DIR$/source/impl/routes.js" />
         <option value="$PROJECT_DIR$/source/test/test-connect-db.js" />
         <option value="$PROJECT_DIR$/source/index.js" />
-        <option value="$PROJECT_DIR$/source/package.json" />
         <option value="$PROJECT_DIR$/source/impl/server.js" />
+        <option value="$PROJECT_DIR$/source/package.json" />
       </list>
     </option>
   </component>
@@ -591,13 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="68" selection-start="417" selection-end="417" vertical-scroll-proportion="0.6836461">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/test/test-connect-db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="26" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
@@ -621,7 +622,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/impl/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.2756892">
+        <state line="15" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="0.09115282">
           <folding />
         </state>
       </provider>
