@@ -18,7 +18,7 @@ describe( 'test parser-xml', function() {
         it( 'useTransformer( noop )', function(done) {
 
             transformer.transform( "<hello><firstname>Andreas</firstname><lastname>Siebert</lastname></hello>", function( json ) {
-                console.log( "-- transformed::: %j ", json );
+                // console.log( "-- transformed::: %j ", json );
 
                 assert.ok( (json.hello) );
                 assert.ok( (json.hello.firstname) );

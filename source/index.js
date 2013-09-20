@@ -86,7 +86,6 @@ exports.db = function () {
 
         // (re)-use model if possible :::
         if( rval ) {
-
             console.log( "-- model for {name : " + name + "} " );
             return rval;
         }
@@ -105,6 +104,18 @@ exports.db = function () {
     return this;
 };
 
+
+exports.connector = function ( config ) {
+    // TODO: optimize, do not config 2 times?
+    var service = require( "./impl/service/service.js" );
+    service.config( config );
+
+    this.read = function( params, callback ) {
+        service.exec( params, callback() );
+    };
+
+    return this;
+}
 
 /**
  * Validate configuration before use it.

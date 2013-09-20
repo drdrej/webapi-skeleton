@@ -4,6 +4,7 @@
 var http = require( "http" );
 var _ = require( "underscore" );
 var URL = require( "url" );
+var useCallback = require( "../util/use-callback.js").useCallback;
 
 /**
  * to configure the endpoint/service-client and chaining.
@@ -84,7 +85,11 @@ var validateTransformer = function( opts ) {
 exports.exec = function( params, callback ) {
     console.log( "-- call execute: %j ", this.url );
 
-    this.request( false, callback );
+    if( !(params && _.isObject(params)) ) {
+        this.request( false, false, callback );
+    } else {
+        this.request( params, false, callback );
+    }
 };
 
 
@@ -114,6 +119,9 @@ this.buildOptions = function() {
 
     rval.method = "GET";
     rval.port = 80;
+    rval.query = {
+        'call' : 'true'
+    }
 
     console.log( "-- build http.request-options" );
 
@@ -123,12 +131,12 @@ this.buildOptions = function() {
 // -----------------------------------------------------------
 // ## private methods
 // -----------------------------------------------------------
-this.request = function( body, callback ) {
+this.request = function( params, body, callback ) {
     var httpOpt = this.buildOptions();
 
     var httpReq = http.request( httpOpt, function( httpResp ) {
          console.log( "http.request successful." );
-         handleResponse( httpResp, callback);
+         handleResponse( httpResp, callback, this.transformer);
     });
 
     httpReq.on('error', function( err ) {
@@ -154,19 +162,14 @@ var handleRequestError = function( error, callback ) {
     useCallback(callback);
 };
 
-var useCallback = function ( callback ) {
-    var isFnc = callback && _.isFunction(callback);
-    if( isFnc ) {
-        callback();
-    }
-}
+
 
 /**
  * pipes a http-response to another stream/ call transformer
  *
  * @param response
  */
-var handleResponse = function(response, callback) {
+var handleResponse = function(response, callback, transformer) {
     var str = '';
 
     //another chunk of data has been recieved, so append it to `str`
@@ -176,14 +179,13 @@ var handleResponse = function(response, callback) {
 
     response.on( 'error', function( error ) {
          console.log( "couldn't read stream from endpoint." );
-         useCallback(callback);
+         transformer.transform( str, callback );
+        // useCallback( callback );
     });
 
     //the whole response has been recieved, so we just print it out here
     response.on('end', function () {
-        console.log(str);
-
-        useCallback(callback);
+        useCallback( callback );
     });
 };
 

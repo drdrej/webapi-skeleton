@@ -1,14 +1,7 @@
 
 var xml = require( "xml2js" );
 var _ = require( "underscore" );
-
-/*
-var parseString = require('xml2js').parseString;
-var xml = "<root>Hello xml2js!</root>"
-parseString(xml, function (err, result) {
-    console.dir(result);
-});
-*/
+var useCallback = require( "../../util/use-callback.js").useCallback;
 
 
 /**
@@ -29,20 +22,10 @@ exports.transform = function( input, callback ) {
                  if( err )
                      throw err;
 
-                console.log( "found a result!!!!!" );
-                 if( _.isFunction(callback) ) {
-
-                    callback( result );
-                 }
-
-                 return;
+                 useCallback( callback, result );
             });
-
-        return;
     } catch( error ) {
         console.log( "couldn't parse xml: %j ", error );
-
-        if( _.isFunction(callback) )
-            callback( {} );
+        useCallback( callback, {} );
     };
 };
