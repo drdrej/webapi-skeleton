@@ -4,10 +4,10 @@
  * @param input
  * @returns {{input: *}}
  */
-exports.transform = function( input ) {
+exports.transform = function( input, callback ) {
     console.log( "skip response-parser." );
 
-    return {
-        input : input
-    };
+    if(_.isFunction(callback) ) {
+        callback({ input : input });
+    }
 };

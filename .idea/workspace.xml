@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8f1345-11df-4368-be52-8ca26f76720d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/service/service.js" afterPath="$PROJECT_DIR$/source/impl/service/service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/package.json" afterPath="$PROJECT_DIR$/source/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/service/response/parser-noop.js" afterPath="$PROJECT_DIR$/source/impl/service/response/parser-noop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" afterPath="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" />
     </list>
     <ignored path="node-restserver-skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,6 +61,10 @@
     <file path="/response-transformator-noop.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379669928067" ignored="false" />
     <file path="/response-transformator-xml.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379669920607" ignored="false" />
     <file path="/test-service-confg.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379669591524" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/controls/search/apotheke_.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379673414353" ignored="false" />
+    <file path="/parser-xml.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379675604635" ignored="false" />
+    <file path="/test-parser-xml.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379675928126" ignored="false" />
+    <file path="/parser-noop.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379675225315" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,37 +93,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="service.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/impl/service/service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="108" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.6115108">
+            <state line="115" column="19" selection-start="2561" selection-end="2561" vertical-scroll-proportion="-20.06">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test-service-confg.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/test/test-service-confg.js">
+      <file leaf-file-name="parser-xml.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="67" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
+            <state line="30" column="15" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test-service-config-backpoint.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/test/test-service-config-backpoint.js">
+      <file leaf-file-name="test-parser-xml.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/test/test-parser-xml.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="20" selection-start="675" selection-end="675" vertical-scroll-proportion="-3.3">
+            <state line="13" column="52" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parser-noop.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-noop.js">
+      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
+            <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="0.05862069">
               <folding />
             </state>
           </provider>
@@ -150,11 +156,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/source/impl/routes.js" />
-        <option value="$PROJECT_DIR$/source/test/test-connect-db.js" />
-        <option value="$PROJECT_DIR$/source/index.js" />
         <option value="$PROJECT_DIR$/source/impl/server.js" />
-        <option value="$PROJECT_DIR$/source/package.json" />
         <option value="$PROJECT_DIR$/source/impl/chaining/cache.js" />
         <option value="$PROJECT_DIR$/source/test/test-hello-world.js" />
         <option value="$PROJECT_DIR$/source/test/test-service-endpoint.js" />
@@ -166,6 +168,10 @@
         <option value="$PROJECT_DIR$/source/test/test-service-config-backpoint.js" />
         <option value="$PROJECT_DIR$/source/test/test-service-exec-backpoint.js" />
         <option value="$PROJECT_DIR$/source/impl/service/service.js" />
+        <option value="$PROJECT_DIR$/source/impl/service/response/parser-noop.js" />
+        <option value="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" />
+        <option value="$PROJECT_DIR$/source/test/test-parser-xml.js" />
+        <option value="$PROJECT_DIR$/source/package.json" />
       </list>
     </option>
   </component>
@@ -492,7 +498,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32753164" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41613925" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981302" sideWeight="0.58386075" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981302" sideWeight="0.58386075" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29905063" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -611,20 +617,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/test/01-prepare-env.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="347" selection-end="347" vertical-scroll-proportion="0.5313283">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/impl/db/connect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="296" selection-end="296" vertical-scroll-proportion="0.46867168">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/test/test-connect-db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="26" selection-start="794" selection-end="794" vertical-scroll-proportion="0.31829575">
@@ -653,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/test/test-hello-world.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="47" selection-start="81" selection-end="81" vertical-scroll-proportion="0.08415841">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/impl/service/cache.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
@@ -681,27 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="156" selection-end="156" vertical-scroll-proportion="0.25247526">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-noop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/test/test-service-confg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="67" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/test/test-service-exec-backpoint.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="50" selection-start="296" selection-end="325" vertical-scroll-proportion="0.0">
@@ -709,16 +673,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/test/test-service-config-backpoint.js">
+    <entry file="file://$PROJECT_DIR$/source/impl/service/service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="675" selection-end="675" vertical-scroll-proportion="-3.3">
+        <state line="115" column="19" selection-start="2561" selection-end="2561" vertical-scroll-proportion="-20.06">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/impl/service/service.js">
+    <entry file="file://$PROJECT_DIR$/source/test/test-hello-world.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="108" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.6115108">
+        <state line="2" column="0" selection-start="31" selection-end="85" vertical-scroll-proportion="0.056410257">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/test/test-service-config-backpoint.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="675" selection-end="675" vertical-scroll-proportion="0.3084112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/test/test-service-confg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="43" selection-start="272" selection-end="272" vertical-scroll-proportion="0.36468646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-noop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="74" selection-start="281" selection-end="281" vertical-scroll-proportion="0.36468646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="15" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/test/test-parser-xml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="52" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="0.05862069">
           <folding />
         </state>
       </provider>

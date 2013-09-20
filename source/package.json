@@ -1,6 +1,6 @@
 {
   "name": "node-restserver-skeleton",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "basic rest-server based on nodejs, restify & mongoose",
   "readmeFilename": "README.md",
   "main": "index.js",
@@ -11,7 +11,8 @@
     "restify": "~2.6.0",
     "mocha": "~1.13.0",
     "mongoose": "~3.6.19",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5.2",
+    "xml2js": "~0.2.8"
   },
   "repository": "",
   "keywords": [
@@ -21,7 +22,6 @@
     "app",
     "skeleton"
   ],
-
   "author": "drdrej",
   "license": "Apache License 2"
 }
