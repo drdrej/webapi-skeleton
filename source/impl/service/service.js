@@ -74,10 +74,10 @@ var validateTransformer = function( opts ) {
  *
  * ? -- cache data.
  * -- convert to json.
+ * ? -- cache json
  *
- *
- * -- read json.
  * -- filter json.
+ * --response json to client.
  *
  * @param callback
  */
@@ -113,6 +113,7 @@ this.buildOptions = function() {
     }
 
     rval.method = "GET";
+    rval.port = 80;
 
     console.log( "-- build http.request-options" );
 

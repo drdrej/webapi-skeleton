@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4c8f1345-11df-4368-be52-8ca26f76720d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/service/service.js" afterPath="$PROJECT_DIR$/source/impl/service/service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/test/test-service-config-backpoint.js" afterPath="$PROJECT_DIR$/source/test/test-service-config-backpoint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/test/test-service-exec-backpoint.js" afterPath="$PROJECT_DIR$/source/test/test-service-exec-backpoint.js" />
     </list>
     <ignored path="node-restserver-skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +51,7 @@
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/work/mongodb-example-krankenhaus.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379512264532" ignored="false" />
     <file path="/fragment.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379525906288" ignored="false" />
     <file path="/cache.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379598482513" ignored="false" />
-    <file path="/service.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379670877908" ignored="false" />
+    <file path="/service.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379671848390" ignored="false" />
     <file path="/test-service-endpoint.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379604236899" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-google-places-access.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379661909497" ignored="false" />
     <file path="/test-service-exec-backpoint.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379604816311" ignored="false" />
@@ -89,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="service.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/impl/service/service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="55" selection-start="1284" selection-end="1284" vertical-scroll-proportion="-17.34">
+            <state line="115" column="108" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.6115108">
               <folding />
             </state>
           </provider>
@@ -107,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test-service-config-backpoint.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test-service-config-backpoint.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/test/test-service-config-backpoint.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="20" selection-start="675" selection-end="675" vertical-scroll-proportion="0.5631399">
+            <state line="25" column="20" selection-start="675" selection-end="675" vertical-scroll-proportion="-3.3">
               <folding />
             </state>
           </provider>
@@ -165,9 +163,9 @@
         <option value="$PROJECT_DIR$/source/impl/service/response-transformator-xml.js" />
         <option value="$PROJECT_DIR$/source/impl/service/response-transformator-noop.js" />
         <option value="$PROJECT_DIR$/source/test/test-service-confg.js" />
-        <option value="$PROJECT_DIR$/source/impl/service/service.js" />
         <option value="$PROJECT_DIR$/source/test/test-service-config-backpoint.js" />
         <option value="$PROJECT_DIR$/source/test/test-service-exec-backpoint.js" />
+        <option value="$PROJECT_DIR$/source/impl/service/service.js" />
       </list>
     </option>
   </component>
@@ -492,9 +490,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32753164" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32753164" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41613925" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41613925" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981302" sideWeight="0.58386075" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981302" sideWeight="0.58386075" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29905063" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -697,13 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/impl/service/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="55" selection-start="1284" selection-end="1284" vertical-scroll-proportion="-17.34">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/test/test-service-confg.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="67" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
@@ -720,7 +711,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/test/test-service-config-backpoint.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="675" selection-end="675" vertical-scroll-proportion="0.5631399">
+        <state line="25" column="20" selection-start="675" selection-end="675" vertical-scroll-proportion="-3.3">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/impl/service/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="108" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.6115108">
           <folding />
         </state>
       </provider>
