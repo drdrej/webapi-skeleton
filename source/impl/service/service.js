@@ -57,11 +57,11 @@ exports.useTransformer = function( opts ) {
 
 var validateTransformer = function( opts ) {
     // TODO: Transformer-validation-messaging.
-    return
+    return  (
         _.has(opts, "transformer" )
             && _.isObject(opts.transformer)
             && _.has( opts.transformer, "transform" )
-            && _.isFunction( opts.transformer.transform );
+            && _.isFunction( opts.transformer.transform ));
 }
 
 
@@ -114,11 +114,10 @@ this.buildOptions = function() {
     if( hasPort ) {
         rval.port = this.url.port;
     } else {
-        rval.port = "/";
+        rval.port = 80;
     }
 
     rval.method = "GET";
-    rval.port = 80;
 
     console.log( "-- build http.request-options" );
 

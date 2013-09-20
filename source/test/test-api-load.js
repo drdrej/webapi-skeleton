@@ -12,10 +12,9 @@ var _ = require( "underscore" );
 describe( 'test index.js', function() {
 
     describe( 'load()', function() {
-        var transformer = require( "../impl/service/response/parser-xml.js" );
+        var transformer = api.load().transformer().xml;
 
         it( 'transformer().xml', function(done) {
-            var transformer = api.load().transformer().xml;
             assert.ok( _.isObject(transformer) );
 
             done();
