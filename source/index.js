@@ -135,6 +135,10 @@ exports.load = function() {
     this.transformer = function ( ){
         this.noop = require( "./impl/service/response/parser-noop.js" );
         this.xml = require( "./impl/service/response/parser-xml.js" );
+
+        return this;
     }
+
+    return this;
 }
 

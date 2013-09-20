@@ -119,9 +119,6 @@ this.buildOptions = function() {
 
     rval.method = "GET";
     rval.port = 80;
-    rval.query = {
-        'call' : 'true'
-    }
 
     console.log( "-- build http.request-options" );
 
@@ -133,6 +130,9 @@ this.buildOptions = function() {
 // -----------------------------------------------------------
 this.request = function( params, body, callback ) {
     var httpOpt = this.buildOptions();
+    fillParams(httpOpt, params);
+
+    console.log( "-- use http.options: %j ", httpOpt );
 
     var transformer = this.transformer;
 
@@ -151,6 +151,25 @@ this.request = function( params, body, callback ) {
 
     httpReq.end();
 };
+
+
+var querystring = require('querystring');
+var fillParams = function( httpOpt, params ) {
+    console.log( "### http.opt before manipulation ::: %j ", httpOpt);
+    var queryExt = querystring.stringify( params );
+
+    var isPathExists = (httpOpt.path && (
+        (_.isString(httpOpt.path)  )
+      && httpOpt.path.indexOf( "?" ) > 0 ));
+
+    if( isPathExists )
+      httpOpt.path = httpOpt.path + "&" + queryExt;
+    else
+      httpOpt.path = queryExt;
+
+    console.log( "###### query.params ::: %j ", httpOpt);
+};
+
 
 
 var handleRequestError = function( error, callback ) {
