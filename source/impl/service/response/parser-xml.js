@@ -21,11 +21,11 @@ exports.transform = function( input, callback ) {
             function (err, result) {
                  if( err )
                      throw err;
-
-                 useCallback( callback, result );
+;
+                 useCallback( result, callback );
             });
     } catch( error ) {
         console.log( "couldn't parse xml: %j ", error );
-        useCallback( callback, {} );
+        useCallback( {}, callback );
     };
 };

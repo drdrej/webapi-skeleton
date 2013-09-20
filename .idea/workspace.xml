@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4c8f1345-11df-4368-be52-8ca26f76720d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/index.js" afterPath="$PROJECT_DIR$/source/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/service/response/parser-noop.js" afterPath="$PROJECT_DIR$/source/impl/service/response/parser-noop.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" afterPath="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/service/service.js" afterPath="$PROJECT_DIR$/source/impl/service/service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/test/test-parser-xml.js" afterPath="$PROJECT_DIR$/source/test/test-parser-xml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/test/test-api-connector.js" afterPath="$PROJECT_DIR$/source/test/test-api-connector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/util/use-callback.js" afterPath="$PROJECT_DIR$/source/impl/util/use-callback.js" />
     </list>
     <ignored path="node-restserver-skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,8 +21,8 @@
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/package.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379604188001" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-hello-world.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379412873182" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-rest-search-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379592419893" ignored="false" />
-    <file path="/index.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379676577578" ignored="false" />
-    <file path="/a.dummy" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379683731011" ignored="false" />
+    <file path="/index.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379686492694" ignored="false" />
+    <file path="/a.dummy" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379686622942" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/index.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379509150717" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/server.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379592692579" ignored="false" />
     <file path="/server.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379518918645" ignored="false" />
@@ -54,7 +56,7 @@
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/work/mongodb-example-krankenhaus.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379512264532" ignored="false" />
     <file path="/fragment.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379525906288" ignored="false" />
     <file path="/cache.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379598482513" ignored="false" />
-    <file path="/service.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379684397139" ignored="false" />
+    <file path="/service.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379686210111" ignored="false" />
     <file path="/test-service-endpoint.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379604236899" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-google-places-access.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379661909497" ignored="false" />
     <file path="/test-service-exec-backpoint.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379604816311" ignored="false" />
@@ -63,11 +65,11 @@
     <file path="/response-transformator-xml.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379669920607" ignored="false" />
     <file path="/test-service-confg.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379669591524" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/controls/search/apotheke_.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379673414353" ignored="false" />
-    <file path="/parser-xml.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379684619642" ignored="false" />
+    <file path="/parser-xml.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379685418916" ignored="false" />
     <file path="/test-parser-xml.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379675928126" ignored="false" />
-    <file path="/parser-noop.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379675225315" ignored="false" />
-    <file path="/test-api-connector.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379683441284" ignored="false" />
-    <file path="/use-callback.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379684949050" ignored="false" />
+    <file path="/parser-noop.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379686310865" ignored="false" />
+    <file path="/test-api-connector.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379685725706" ignored="false" />
+    <file path="/use-callback.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379685579819" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,19 +89,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="service.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="service.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/impl/service/service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="86" selection-end="118" vertical-scroll-proportion="-1.0701439">
+            <state line="186" column="62" selection-start="4296" selection-end="4296" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test-api-connector.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="parser-noop.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-noop.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="7" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test-api-connector.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/test/test-api-connector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="19" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0">
+            <state line="21" column="0" selection-start="571" selection-end="571" vertical-scroll-proportion="0.3319838">
               <folding />
             </state>
           </provider>
@@ -130,14 +141,14 @@
         <option value="$PROJECT_DIR$/source/test/test-service-confg.js" />
         <option value="$PROJECT_DIR$/source/test/test-service-config-backpoint.js" />
         <option value="$PROJECT_DIR$/source/test/test-service-exec-backpoint.js" />
-        <option value="$PROJECT_DIR$/source/impl/service/response/parser-noop.js" />
         <option value="$PROJECT_DIR$/source/package.json" />
-        <option value="$PROJECT_DIR$/source/index.js" />
         <option value="$PROJECT_DIR$/source/test/test-parser-xml.js" />
         <option value="$PROJECT_DIR$/source/impl/service/use-callback.js" />
-        <option value="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" />
-        <option value="$PROJECT_DIR$/source/impl/service/service.js" />
         <option value="$PROJECT_DIR$/source/impl/util/use-callback.js" />
+        <option value="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" />
+        <option value="$PROJECT_DIR$/source/impl/service/response/parser-noop.js" />
+        <option value="$PROJECT_DIR$/source/index.js" />
+        <option value="$PROJECT_DIR$/source/impl/service/service.js" />
         <option value="$PROJECT_DIR$/source/test/test-api-connector.js" />
       </list>
     </option>
@@ -423,7 +434,7 @@
       <ConfigurationWrapper RunnerId="NodeJS.debug" />
       <method />
     </configuration>
-    <configuration default="false" name="test - api-connector" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="$USER_HOME$/AppData/Roaming/npm/node_modules/mocha/bin/_mocha" application-parameters="test/test-api-connector.js" working-dir="$PROJECT_DIR$/source">
+    <configuration default="false" name="test - api-connector" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="$USER_HOME$/AppData/Roaming/npm/node_modules/mocha/bin/_mocha" application-parameters="test/test-api-connector.js --timeout 15000" working-dir="$PROJECT_DIR$/source">
       <RunnerSettings RunnerId="NodeJS.debug" />
       <RunnerSettings RunnerId="NodeJS.run" />
       <ConfigurationWrapper RunnerId="NodeJS.debug" />
@@ -494,10 +505,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32753164" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32753164" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2136076" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.568038" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981302" sideWeight="0.7863924" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16613925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981302" sideWeight="0.431962" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3227848" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28164557" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -597,7 +608,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/source/index.js</url>
-          <line>87</line>
+          <line>85</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -606,47 +617,52 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js</url>
-          <line>27</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js</url>
-          <line>24</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/source/impl/service/service.js</url>
-          <line>85</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/source/impl/service/service.js</url>
-          <line>138</line>
+          <line>140</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/source/impl/service/service.js</url>
-          <line>142</line>
+          <line>144</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/source/impl/service/service.js</url>
-          <line>146</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/source/impl/service/service.js</url>
-          <line>149</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/source/impl/service/service.js</url>
-          <line>137</line>
+          <line>139</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/source/impl/util/use-callback.js</url>
+          <line>7</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/source/impl/service/service.js</url>
+          <line>174</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/source/impl/service/service.js</url>
+          <line>181</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/source/impl/service/service.js</url>
+          <line>185</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/source/impl/util/use-callback.js</url>
+          <line>11</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/source/impl/service/service.js</url>
+          <line>134</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="36" />
+      <option name="time" value="42" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -667,13 +683,6 @@
     <entry file="file://$PROJECT_DIR$/source/test/test-service-confg.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="43" selection-start="272" selection-end="272" vertical-scroll-proportion="0.36468646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-noop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="74" selection-start="281" selection-end="281" vertical-scroll-proportion="0.36468646">
           <folding />
         </state>
       </provider>
@@ -706,13 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="2666" selection-end="2666" vertical-scroll-proportion="0.33970276">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/test/test-service-config-backpoint.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="17" selection-start="335" selection-end="335" vertical-scroll-proportion="0.50530785">
@@ -727,20 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/impl/util/use-callback.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="10" selection-start="247" selection-end="247" vertical-scroll-proportion="0.25247526">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="65" selection-end="134" vertical-scroll-proportion="0.08415841">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/impl/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="67" selection-end="118" vertical-scroll-proportion="0.11221122">
@@ -748,16 +736,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/test/test-api-connector.js">
+    <entry file="file://$PROJECT_DIR$/source/impl/util/use-callback.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="19" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0">
+        <state line="9" column="35" selection-start="242" selection-end="242" vertical-scroll-proportion="0.32484075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="43" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.24203822">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="28" selection-start="325" selection-end="333" vertical-scroll-proportion="0.50530785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-noop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="7" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/impl/service/service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="86" selection-end="118" vertical-scroll-proportion="-1.0701439">
+        <state line="186" column="62" selection-start="4296" selection-end="4296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/test/test-api-connector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="571" selection-end="571" vertical-scroll-proportion="0.3319838">
           <folding />
         </state>
       </provider>

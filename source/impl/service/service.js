@@ -134,9 +134,11 @@ this.buildOptions = function() {
 this.request = function( params, body, callback ) {
     var httpOpt = this.buildOptions();
 
+    var transformer = this.transformer;
+
     var httpReq = http.request( httpOpt, function( httpResp ) {
          console.log( "http.request successful." );
-         handleResponse( httpResp, callback, this.transformer);
+         handleResponse( httpResp, callback, transformer);
     });
 
     httpReq.on('error', function( err ) {
@@ -159,7 +161,7 @@ var handleRequestError = function( error, callback ) {
         }
     }
 
-    useCallback(callback);
+    useCallback({}, callback);
 };
 
 
@@ -172,22 +174,19 @@ var handleRequestError = function( error, callback ) {
 var handleResponse = function(response, callback, transformer) {
     var str = '';
 
-    //another chunk of data has been recieved, so append it to `str`
     response.on('data', function (chunk) {
         str += chunk;
     });
 
     response.on( 'error', function( error ) {
          console.log( "couldn't read stream from endpoint." );
-         transformer.transform( str, callback );
-        // useCallback( callback );
+         useCallback( {}, callback );
     });
 
-    //the whole response has been recieved, so we just print it out here
     response.on('end', function () {
-        useCallback( callback );
+        console.log( "-- content successful read from stream." );
+        if(_.isObject(transformer) ) {
+            transformer.transform( str, callback );
+        }
     });
 };
-
-
-//

@@ -82,8 +82,6 @@ exports.db = function () {
     this.schema = function( name ) {
         var rval = SCHEMA_REGISRRY[ name ];
 
-        // REMOVE: console.log(  "-- found model for name: " + name + " ::: use model: %j " + rval );
-
         // (re)-use model if possible :::
         if( rval ) {
             console.log( "-- model for {name : " + name + "} " );
@@ -111,7 +109,7 @@ exports.connector = function ( config ) {
     service.config( config );
 
     this.read = function( params, callback ) {
-        service.exec( params, callback() );
+        service.exec( params, callback );
     };
 
     return this;
@@ -126,4 +124,17 @@ function checkIsSetupReady( ) {
    // MOTIVATION: to know bugs before as early as possible.
 };
 
+/**
+ * this api will be used to load components from sdk.
+ */
+exports.load = function() {
+
+    /**
+     * transforms an input and call a passed callback.
+     */
+    this.transformer = function ( ){
+        this.noop = require( "./impl/service/response/parser-noop.js" );
+        this.xml = require( "./impl/service/response/parser-xml.js" );
+    }
+}
 

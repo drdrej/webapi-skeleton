@@ -19,10 +19,7 @@ describe( 'test index.js', function() {
                 url         : "http://touchableheroes.com",
                 transformer : transformer
             }).read( {}, function( result ) {
-               //  console.log( "---- content :: %j ", result);
-
-
-                // assert.ok( _.isObject( result ) );
+                assert.ok( _.isObject( result ) );
 
                 done();
             });
