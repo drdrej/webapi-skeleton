@@ -35,9 +35,9 @@ describe( 'test backpoint/entry-point of another server', function() {
             };
         });
 
-        it( 'config( url : google.com )', function(done) {
+        it( 'config( url : touchableheroes.com )', function(done) {
                 service.config( {
-                    "url" : "http://google.com"
+                    "url" : "http://www.touchableheroes.com"
                 });
 
                 assert.ok( true, "got no exception" );

@@ -9,7 +9,7 @@ describe( 'test backpoint/entry-point of another server', function() {
 
     before( function( done ){
         service.config( {
-            "url" : "http://google.com"
+            "url" : "http//www.touchableheroes.com"
         });
 
         done();

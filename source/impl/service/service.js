@@ -1,6 +1,9 @@
-
+/**
+ * @author: A. Siebert, ask@touchableheroes.com
+ */
 var http = require( "http" );
 var _ = require( "underscore" );
+var URL = require( "url" );
 
 /**
  * to configure the endpoint/service-client and chaining.
@@ -12,16 +15,55 @@ exports.config = function( opts ) {
         throw new Error( "couldn't config backpoint-connector." );
     };
 
+    this.useURL( opts );
+    this.useTransformer( opts );
+
+    // this.cachePath = opts.cache;
+
+
+    return this;
+};
+
+exports.useURL = function( opts ) {
     var hasNoURL = !_.has(opts, "url" ) || !_.isString(opts.url);
     if( hasNoURL ) {
         throw new Error( "couldn't config. Has no URL." );
     }
 
-    this.url = opts.url;
-    // this.cachePath = opts.cache;
+    this.url = URL.parse( opts.url );
 
     return this;
 };
+
+exports.useTransformer = function( opts ) {
+    // console.log( "## " + _.has(opts, "transformer" ) );
+    // console.log( "## " + _.isObject(opts.transformer) );
+    // console.log( "## " + _.has( opts.transformer, "transform" ) );
+    // console.log( "## " + _.isFunction( opts.transformer.transform ) );
+
+    var hasTransf = validateTransformer(opts);
+
+    if( hasTransf ) {
+        this.transformer = opts.transformer;
+        return this;
+    }
+
+    this.transformer = require( "./response/parser-noop.js" );
+    return this;
+};
+
+
+
+var validateTransformer = function( opts ) {
+    // TODO: Transformer-validation-messaging.
+    return
+        _.has(opts, "transformer" )
+            && _.isObject(opts.transformer)
+            && _.has( opts.transformer, "transform" )
+            && _.isFunction( opts.transformer.transform );
+}
+
+
 
 /**
  * call the service-endpoint.
@@ -29,46 +71,101 @@ exports.config = function( opts ) {
  * basic-workflow :::
  * -- reads data.
  * -- parse data.
- * -- cache data.
+ *
+ * ? -- cache data.
  * -- convert to json.
+ *
+ *
  * -- read json.
  * -- filter json.
  *
  * @param callback
  */
 exports.exec = function( params, callback ) {
-    console.log( "-- call execute: " + this.url );
+    console.log( "-- call execute: %j ", this.url );
 
-    var hasToExecCallback = (callback && _.isFunction(callback));
-    if( hasToExecCallback ) {
-        callback();
-    }
+    this.request( false, callback );
 };
 
 
-/**
- * requests http and call a callback-method.
- *
- * @param body
- * @param callback
- */
-var request = function( body, callback ) {
-    var httpReq = http.request(options, callback);
+
+this.buildOptions = function() {
+    if( !_.isObject(this.url) ) {
+        throw new Error( "Couldn't parse url. Use service.config() to pass url");
+    }
+
+    var rval = {
+        host   : this.url.hostname
+    };
+
+    var hasPath = (this.url.path && _.isString(this.url.path));
+    if( hasPath ) {
+        rval.path = this.url.path;
+    } else {
+        rval.path = "/";
+    }
+
+    var hasPort = (this.url.port && _.isNumber(this.url.port));
+    if( hasPort ) {
+        rval.port = this.url.port;
+    } else {
+        rval.port = "/";
+    }
+
+    rval.method = "GET";
+
+    console.log( "-- build http.request-options" );
+
+    return rval;
+};
+
+// -----------------------------------------------------------
+// ## private methods
+// -----------------------------------------------------------
+this.request = function( body, callback ) {
+    var httpOpt = this.buildOptions();
+
+    var httpReq = http.request( httpOpt, function( httpResp ) {
+         console.log( "http.request successful." );
+         handleResponse( httpResp, callback);
+    });
+
+    httpReq.on('error', function( err ) {
+         handleRequestError( err, callback );
+    });
 
     if( body && _.isString(body) ) {
         httpReq.write( body );
-    } else {
-        httpReq.write( "" );
     }
 
     httpReq.end();
 };
 
+
+var handleRequestError = function( error, callback ) {
+    switch( error.errno)  {
+        case "EADDRNOTAVAIL" : {
+            console.log( "couldn't connect to endpoint. ");
+            throw error;
+        }
+    }
+
+    useCallback(callback);
+};
+
+var useCallback = function ( callback ) {
+    var isFnc = callback && _.isFunction(callback);
+    if( isFnc ) {
+        callback();
+    }
+}
+
 /**
- * pipes a http-response to another stream
+ * pipes a http-response to another stream/ call transformer
+ *
  * @param response
  */
-var pipe = function(response) {
+var handleResponse = function(response, callback) {
     var str = '';
 
     //another chunk of data has been recieved, so append it to `str`
@@ -76,11 +173,18 @@ var pipe = function(response) {
         str += chunk;
     });
 
+    response.on( 'error', function( error ) {
+         console.log( "couldn't read stream from endpoint." );
+         useCallback(callback);
+    });
+
     //the whole response has been recieved, so we just print it out here
     response.on('end', function () {
         console.log(str);
 
-        console.log( "-- apotheken/search is ready." );
+        useCallback(callback);
     });
 };
 
+
+//
