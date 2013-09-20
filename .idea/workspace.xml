@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8f1345-11df-4368-be52-8ca26f76720d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/service/response/parser-noop.js" afterPath="$PROJECT_DIR$/source/impl/service/response/parser-noop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/service/service.js" afterPath="$PROJECT_DIR$/source/impl/service/service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/test/test-api-load.js" afterPath="$PROJECT_DIR$/source/test/test-api-load.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/package.json" afterPath="$PROJECT_DIR$/source/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" afterPath="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="node-restserver-skeleton.iws" />
@@ -94,19 +93,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="service.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/impl/service/service.js">
+      <file leaf-file-name="parser-xml.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="13" selection-start="2545" selection-end="2545" vertical-scroll-proportion="0.397482">
+            <state line="22" column="36" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test-api-load.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/test/test-api-load.js">
+      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="49" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+            <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="0.05862069">
               <folding />
             </state>
           </provider>
@@ -139,13 +138,13 @@
         <option value="$PROJECT_DIR$/source/test/test-parser-xml.js" />
         <option value="$PROJECT_DIR$/source/impl/service/use-callback.js" />
         <option value="$PROJECT_DIR$/source/impl/util/use-callback.js" />
-        <option value="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" />
-        <option value="$PROJECT_DIR$/source/package.json" />
         <option value="$PROJECT_DIR$/source/index.js" />
         <option value="$PROJECT_DIR$/source/test/test-api-connector.js" />
-        <option value="$PROJECT_DIR$/source/test/test-api-load.js" />
         <option value="$PROJECT_DIR$/source/impl/service/response/parser-noop.js" />
         <option value="$PROJECT_DIR$/source/impl/service/service.js" />
+        <option value="$PROJECT_DIR$/source/test/test-api-load.js" />
+        <option value="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" />
+        <option value="$PROJECT_DIR$/source/package.json" />
       </list>
     </option>
   </component>
@@ -480,8 +479,8 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32753164" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32753164" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981302" sideWeight="0.57753164" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42246836" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981302" sideWeight="0.9541139" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28164557" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -601,12 +600,17 @@
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/source/impl/service/service.js</url>
-          <line>158</line>
-          <option name="timeStamp" value="45" />
+          <url>file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js</url>
+          <line>18</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js</url>
+          <line>21</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="46" />
+      <option name="time" value="48" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -647,23 +651,6 @@
         <state line="4" column="0" selection-start="67" selection-end="118" vertical-scroll-proportion="0.11221122" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/impl/util/use-callback.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="242" selection-end="242" vertical-scroll-proportion="0.32484075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="325" selection-end="333" vertical-scroll-proportion="0.50530785" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="0.17989418" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/impl/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="44" selection-start="733" selection-end="765" vertical-scroll-proportion="0.11716171" />
@@ -692,14 +679,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/test/test-api-load.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="49" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+        <state line="20" column="13" selection-start="447" selection-end="447" vertical-scroll-proportion="0.7522124">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/impl/util/use-callback.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.5516224">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/impl/service/service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="13" selection-start="2545" selection-end="2545" vertical-scroll-proportion="0.397482">
+        <state line="166" column="18" selection-start="4001" selection-end="4001" vertical-scroll-proportion="0.21453287">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="36" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="0.05862069">
           <folding />
         </state>
       </provider>

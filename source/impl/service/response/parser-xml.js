@@ -21,7 +21,7 @@ exports.transform = function( input, callback ) {
             function (err, result) {
                  if( err )
                      throw err;
-;
+
                  useCallback( result, callback );
             });
     } catch( error ) {
