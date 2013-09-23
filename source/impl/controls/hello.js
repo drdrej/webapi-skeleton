@@ -8,9 +8,13 @@
  * @author: A. Siebert, ask@touchableheroes.com
  */
 exports.exec = function(req, res, next) {
-    res.contentType = 'application/json';
+    // res.contentType = 'application/json';
+    //
+    // res.send({ code: 200, message: 'hello ' + req.params.name });
+    // res.end();
 
-    res.send({ code: 200, message: 'hello ' + req.params.name });
-    res.end();
+    APP.response().send( { code: 200,
+                           message: 'hello ' + req.params.name },
+        res );
 };
 

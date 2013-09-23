@@ -12,7 +12,7 @@ var _ = require( "underscore" );
 describe( 'test index.js', function() {
 
     describe( 'connector()', function() {
-        var transformer = require( "../impl/service/response/parser-xml.js" );
+        var transformer = require( "../impl/service/response/parser-noop.js" );
 
 
         it( 'exec( --no-params )', function(done) {
@@ -20,7 +20,8 @@ describe( 'test index.js', function() {
                 url         : "http://touchableheroes.com",
                 transformer : transformer
             }).read( {}, function( result ) {
-                assert.ok( _.isObject( result ) );
+                assert.ok( _.isObject(result) );
+                assert.ok(_.isString(result.input) );
 
                 done();
             });

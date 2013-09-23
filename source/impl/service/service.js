@@ -37,11 +37,6 @@ exports.useURL = function( opts ) {
 };
 
 exports.useTransformer = function( opts ) {
-    // console.log( "## " + _.has(opts, "transformer" ) );
-    // console.log( "## " + _.isObject(opts.transformer) );
-    // console.log( "## " + _.has( opts.transformer, "transform" ) );
-    // console.log( "## " + _.isFunction( opts.transformer.transform ) );
-
     var hasTransf = validateTransformer(opts);
 
     if( hasTransf ) {

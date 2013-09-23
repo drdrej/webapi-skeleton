@@ -7,14 +7,30 @@
  * @type {*}
  */
 
-restify = require( 'restify' );
+// restify = require( 'restify' );
 assert = require( 'assert' );
+
+APP = require( "../index.js" );
+
+
+/**
+ * Example: how to setup a server.
+ */
+APP.setup( {
+    "config"   : __dirname + "/../config",
+    "controls" : __dirname + "/../impl/controls",
+    "mongodb"  : "mongodb://localhost/restAPP",
+    "schema"   : __dirname + "/../config/database"
+});
+
+var db = APP.db();
+db.connect();
 
 before( function(done) {
     console.log( "-- prepare environment." );
 
-    var rest = require('../impl/server.js');
-    rest.start();
+    APP.server()
+        .start();
 
     done();
 });

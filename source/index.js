@@ -140,5 +140,18 @@ exports.load = function() {
     }
 
     return this;
-}
+};
+
+
+exports.response = function() {
+    var modulePath = "./impl/response/send-response.js";
+
+    try {
+       var handler = require(modulePath);
+
+        return handler;
+    } catch( err ) {
+        console.log( "couldn't load response-handler: " + modulePath );
+    }
+};
 

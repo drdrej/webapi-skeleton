@@ -7,25 +7,9 @@
 
 var assert = require( "assert" );
 
-var api = require( "../index.js" );
-
-api.setup( {
-     "config"   : __dirname + "/../config",
-     "controls" : __dirname + "/../impl/controls",
-     "mongodb"  :  "mongodb://localhost/restAPP",
-     "schema"   : __dirname + "/../config/database"
-} );
-
-
 describe( 'database-check', function() {
 
-    var dbFacade = api.db();
-
-    before(function(done) {
-        dbFacade.connect( function(connection) {
-             done();
-        } );
-    });
+    var dbFacade = APP.db();
 
     describe('Hello.Schema exists', function() {
        console.log( "-- test ready" );

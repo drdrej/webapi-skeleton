@@ -13,19 +13,24 @@ var useCallback = require( "../../util/use-callback.js").useCallback;
  * @returns {{input: *}}
  */
 exports.transform = function( input, callback ) {
-    console.log( "skip response-parser." );
+    console.log( "skip response-parser. input : " + input );
 
     try {
         xml.parseString( input,
             { trim :true, async : false},
             function (err, result) {
-                 if( err )
-                     throw err;
+                 if( err ) {
+                     console.error( "Couldn't parse xml. Return empty result.");
+                     useCallback( null, callback );
+                     return;
+                 }
 
-                 useCallback( result, callback );
+                useCallback( result, callback );
+                return;
             });
     } catch( error ) {
         console.log( "couldn't parse xml: %j ", error );
-        useCallback( {}, callback );
+        useCallback( null, callback );
+        return;
     };
 };
