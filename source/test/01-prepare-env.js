@@ -1,13 +1,10 @@
 /**
- * Kein Test.
- *
- * Startet den server, bevor andere mocha-tests ausgeführt werden können.
- * Wird für die Tests der Schnittstellen benötigt.
+ * It's not a test.
+ * Start and configure the environment beofre tests can run.
  *
  * @type {*}
  */
 
-// restify = require( 'restify' );
 assert = require( 'assert' );
 
 APP = require( "../index.js" );

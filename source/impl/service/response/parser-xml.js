@@ -13,7 +13,7 @@ var useCallback = require( "../../util/use-callback.js").useCallback;
  * @returns {{input: *}}
  */
 exports.transform = function( input, callback ) {
-    console.log( "skip response-parser. input : " + input );
+    // console.log( "skip response-parser. input : " + input );
 
     try {
         xml.parseString( input,

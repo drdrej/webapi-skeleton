@@ -149,7 +149,7 @@ this.request = function( params, body, callback ) {
 
 var querystring = require('querystring');
 var fillParams = function( httpOpt, params ) {
-    console.log( "### http.opt before manipulation ::: %j ", httpOpt);
+   //  console.log( "### http.opt before manipulation ::: %j ", httpOpt);
     var queryExt = querystring.stringify( params );
 
     var isPathExists = (httpOpt.path && (
@@ -161,7 +161,7 @@ var fillParams = function( httpOpt, params ) {
     else
       httpOpt.path = queryExt;
 
-    console.log( "###### query.params ::: %j ", httpOpt);
+    // console.log( "###### query.params ::: %j ", httpOpt);
 };
 
 
