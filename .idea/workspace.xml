@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8f1345-11df-4368-be52-8ca26f76720d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/package.json" afterPath="$PROJECT_DIR$/source/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" afterPath="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="node-restserver-skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379691593243" ignored="false" />
+    <file path="/Dummy.txt" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379695085189" ignored="false" />
     <file path="/routes.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379417246789" ignored="false" />
     <file path="/connect.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379426179195" ignored="false" />
     <file path="/test-connect-db.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379509968740" ignored="false" />
@@ -33,9 +31,9 @@
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/import/import-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379422746885" ignored="false" />
     <file path="/import-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379423259824" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/import/krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379432461496" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/index.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379500561987" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/index.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379693431909" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/db/connect.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379426635912" ignored="false" />
-    <file path="/krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379526171269" ignored="false" />
+    <file path="/krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379695685639" ignored="false" />
     <file path="/01-prepare-env.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379514629103" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-db-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379426803495" ignored="false" />
     <file path="/test-db-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379426802755" ignored="false" />
@@ -43,7 +41,7 @@
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/db/schema.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379511140776" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-control-search-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379434764215" ignored="false" />
     <file path="/test-control-search-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379432277199" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/controls/search/krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379530261456" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/controls/search/krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379697059738" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/controls/search/krankenhaus/select-krankenhaus-by-plz.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379495324514" ignored="false" />
     <file path="/select-krankenhaus-by-plz.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379495163285" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/config/basics.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379495525248" ignored="false" />
@@ -68,12 +66,24 @@
     <file path="/test-api-connector.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379687995551" ignored="false" />
     <file path="/use-callback.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379685579819" ignored="false" />
     <file path="/test-api-load.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379686984124" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/controls/search/apotheke.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379692056034" ignored="false" />
-    <file path="/apotheke.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379692037075" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/controls/search/apotheke.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379700529482" ignored="false" />
+    <file path="/apotheke.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379700508126" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/import/data/apotheke-original.xml.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379691773834" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/import/data/apotheke-original.xml" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379691892883" ignored="false" />
     <file path="/apotheke-original.xml" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379691890735" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/service/service.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379692905735" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/service/service.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379693431909" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/service/response/parser-noop.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379693431909" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/util/use-callback.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379693431909" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/service/response/parser-xml.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379693431909" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-rest-search-apotheke.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379695450246" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/controls/search/util/http/send-response.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379699531094" ignored="false" />
+    <file path="/send-response.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379944943809" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/controls/search/notdienst.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379699632786" ignored="false" />
+    <file path="/notdienst.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379699625480" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/controls/control-wrapper.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379944948557" ignored="false" />
+    <file path="/control-wrapper.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379754391823" ignored="false" />
+    <file path="/wrapper-lifecycle.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379945225254" ignored="false" />
+    <file path="/wrapper.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379945317301" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,19 +103,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="parser-xml.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js">
+      <file leaf-file-name="wrapper.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/impl/control/wrapper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="36" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="14" column="12" selection-start="195" selection-end="199" vertical-scroll-proportion="0.39273927">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/package.json">
+      <file leaf-file-name="wrapper-lifecycle.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/impl/control/wrapper-lifecycle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="0.05862069">
+            <state line="23" column="35" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,8 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/source/impl/service/response-parser-noop.js" />
-        <option value="$PROJECT_DIR$/source/impl/service/response-transformator-xml.js" />
         <option value="$PROJECT_DIR$/source/impl/service/response-transformator-noop.js" />
         <option value="$PROJECT_DIR$/source/test/test-service-confg.js" />
         <option value="$PROJECT_DIR$/source/test/test-service-config-backpoint.js" />
@@ -145,6 +155,8 @@
         <option value="$PROJECT_DIR$/source/test/test-api-load.js" />
         <option value="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" />
         <option value="$PROJECT_DIR$/source/package.json" />
+        <option value="$PROJECT_DIR$/source/impl/control/wrapper-lifecycle.js" />
+        <option value="$PROJECT_DIR$/source/impl/control/wrapper.js" />
       </list>
     </option>
   </component>
@@ -226,7 +238,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -313,7 +324,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,24 +349,65 @@
               <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="response" />
+              <option name="myItemId" value="node-restserver-skeleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node-restserver-skeleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node-restserver-skeleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node-restserver-skeleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="control" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -415,10 +467,10 @@
       <method />
     </configuration>
     <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JsTestDriver.test-service-confg.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.test - full" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.test - config service" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.test - api-connector" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.test - full" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.test - config service" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.test - api-connector" />
+      <item index="3" class="java.lang.String" itemvalue="JsTestDriver.test-service-confg.js" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -480,7 +532,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32753164" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981302" sideWeight="0.9541139" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28164557" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -614,16 +666,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/test/test-service-confg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="43" selection-start="272" selection-end="272" vertical-scroll-proportion="0.36468646" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/impl/service/cache.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.28052804" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/test/test-parser-xml.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="19" selection-start="623" selection-end="623" vertical-scroll-proportion="0.23777778" />
@@ -658,9 +700,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-noop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="2" selection-start="320" selection-end="320" vertical-scroll-proportion="0.36468646">
-          <folding />
-        </state>
+        <state line="13" column="2" selection-start="320" selection-end="320" vertical-scroll-proportion="0.36468646" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/test/test-api-connector.js">
@@ -679,9 +719,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/test/test-api-load.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="447" selection-end="447" vertical-scroll-proportion="0.7522124">
-          <folding />
-        </state>
+        <state line="20" column="13" selection-start="447" selection-end="447" vertical-scroll-proportion="0.7522124" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/impl/util/use-callback.js">
@@ -693,22 +731,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/impl/service/service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="18" selection-start="4001" selection-end="4001" vertical-scroll-proportion="0.21453287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="36" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="166" column="18" selection-start="4001" selection-end="4001" vertical-scroll-proportion="0.21453287" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="0.05862069">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/impl/service/response/parser-xml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="36" selection-start="579" selection-end="579" vertical-scroll-proportion="0.6171617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/impl/control/wrapper-lifecycle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="35" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/impl/control/wrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="12" selection-start="195" selection-end="199" vertical-scroll-proportion="0.39273927">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
