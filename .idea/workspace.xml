@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c8f1345-11df-4368-be52-8ca26f76720d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/package.json" afterPath="$PROJECT_DIR$/source/package.json" />
-    </list>
+    <list default="true" id="4c8f1345-11df-4368-be52-8ca26f76720d" name="Default" comment="" />
     <ignored path="node-restserver-skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379948182661" ignored="false" />
@@ -107,7 +105,7 @@
       <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="0.05862069">
+            <state line="8" column="3" selection-start="268" selection-end="268" vertical-scroll-proportion="0.23448277">
               <folding />
             </state>
           </provider>
@@ -392,7 +390,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1368" height="776" extended-state="6" />
+    <frame x="-4" y="-4" width="1368" height="776" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32753164" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -610,7 +608,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="0.05862069">
+        <state line="8" column="3" selection-start="268" selection-end="268" vertical-scroll-proportion="0.23448277">
           <folding />
         </state>
       </provider>
