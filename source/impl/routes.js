@@ -68,11 +68,20 @@ function load( route, index, controls ) {
     var controlPath =  pathPrefix + route.control + ".js";
     console.log( "-- load control by { path : " + controlPath + "}." );
 
-    var control = require( controlPath );
-    console.log( "-- control loaded");
-
-    return control;
+    return loadControl( controlPath );
 }
+
+function loadControl( path ) {
+    try {
+        var control = require( path );
+        console.log( "-- control loaded: " + path);
+
+        return control;
+    } catch( err ) {
+        console.error( "!! couldn't load control { path : " + path + " }");
+        throw err;
+    }
+};
 
 
 function bind( server, route, control ) {
