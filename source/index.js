@@ -64,6 +64,25 @@ var SCHEMA_REGISRRY = {
 };
 
 /**
+ * use this method to setup an environment.
+ * you need to pass some configs and wait until callback is called.
+ *
+ * @type {*}
+ */
+exports.bootApp = function( config, tables ) {
+    var self = this;
+
+    var doIt = require( "./impl/bootstrap.js" );
+
+    this.run = function( afterSetup ) {
+        // pass reference to app!
+        doIt.setup(self, config, tables, afterSetup );
+    };
+
+    return this;
+};
+
+/**
  * DB-API
  *
  * @returns DB-definition.
@@ -103,6 +122,12 @@ exports.db = function () {
 };
 
 
+/**
+ * use ths method to call a connector to read data from this connector.
+ *
+ * @param config
+ * @returns {*}
+ */
 exports.connector = function ( config ) {
     // TODO: optimize, do not config 2 times?
     var service = require( "./impl/service/service.js" );

@@ -9,7 +9,7 @@ var Schema = mongoose.Schema;
 
 
 /**
- * Install Schema for a passed Schema-Namen.
+ * Install Schema for a passed Mongo-Schema-Name.
  *
  * @param name, never NULL.
  * @returns {*} die Model-Instance, never NULL.
@@ -30,13 +30,27 @@ exports.install = function ( pathPrefix, name ) {
         }
 
         var path = pathPrefix + "/" + name + ".schema.json";
-        var json = require( path );
 
+        var json = loadSchemaDef( name, path );
         var schemaDef = new Schema( json );
 
         var schemaType = mongoose.model( name, schemaDef);
 
         return schemaType;
     };
+
+
+    function loadSchemaDef( name, path ) {
+        try {
+            var json = require( path );
+        } catch ( err ) {
+            console.error( "couldn't load mongo.schema.json { name : %s, path : %j }",
+                name, path );
+            console.error( err );
+
+            throw err;
+        }
+    };
+
 };
 

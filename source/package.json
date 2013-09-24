@@ -1,6 +1,6 @@
 {
   "name": "node-restserver-skeleton",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "basic rest-server based on nodejs, restify & mongoose",
   "readmeFilename": "README.md",
   "main": "index.js",
