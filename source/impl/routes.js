@@ -76,12 +76,31 @@ function loadControl( path ) {
         var control = require( path );
         console.log( "-- control loaded: " + path);
 
+        validateControl( control );
+
         return control;
     } catch( err ) {
         console.error( "!! couldn't load control { path : " + path + " }");
         throw err;
     }
 };
+
+function validateControl ( control ) {
+    if( !_.isObject(control) ) {
+        var msg = "!! couldn't load control. loaded control is not an object.";
+        console.error( msg );
+
+        throw new Error(msg);
+    }
+
+    if( !_.isFunction(control.exec) ) {
+        var msg = "!! couldn't load control. control needs a function exec(request, response, callback).";
+        console.error( msg );
+
+        throw new Error(msg);
+    }
+};
+
 
 
 function bind( server, route, control ) {
