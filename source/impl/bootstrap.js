@@ -8,15 +8,7 @@ var _ = require( "underscore" );
 
 exports.setup = function( APP, basicConfig, tables, afterSetup ) {
 
-    // connect to app :::
-    // APP = require( "node-restserver-skeleton" );
-
-    /* example of a basic-config ::: {
-        "config"   : __dirname + "/../config",
-        "controls" : __dirname + "/../impl/controls",
-        "mongodb"  : "mongodb://localhost/restAPP",
-        "schema"   :  __dirname + "/../config/database"
-    } */
+    // config app
     APP.setup( basicConfig );
 
     // init rest-interface :::
@@ -42,6 +34,7 @@ exports.setup = function( APP, basicConfig, tables, afterSetup ) {
     // ########################################################
     // ##              private functions/helper
     // ########################################################
+    /*
     function bindSchemas( tables ) {
         if( _.isArray(tables)  ) {
             _.each( tables, function( table ) {
@@ -49,6 +42,21 @@ exports.setup = function( APP, basicConfig, tables, afterSetup ) {
             });
         } else {
             bindSchema( tables )
+        }
+    } */
+
+    function bindSchemas( tables ) {
+        if( _.isArray(tables)  ) {
+            _.each( tables, function( table ) {
+                bindSchema(table);
+            });
+        } else if( _.isString(tables) ) {
+            bindSchema( tables )
+        } else {
+            var msg = "!! couldn't bind schema: %j";
+            console.error( msg, tables );
+
+            throw new Error( msg );
         }
     }
 

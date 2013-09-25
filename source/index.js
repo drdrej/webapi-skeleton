@@ -72,11 +72,11 @@ var SCHEMA_REGISRRY = {
 exports.bootApp = function( config, tables ) {
     var self = this;
 
-    var doIt = require( "./impl/bootstrap.js" );
+    var bootstrap = require( "./impl/bootstrap.js" );
 
     this.run = function( afterSetup ) {
         // pass reference to app!
-        doIt.setup(self, config, tables, afterSetup );
+        bootstrap.setup(self, config, tables, afterSetup );
     };
 
     return this;
