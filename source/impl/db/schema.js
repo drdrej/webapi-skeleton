@@ -43,6 +43,14 @@ exports.install = function ( pathPrefix, name ) {
     function loadSchemaDef( name, path ) {
         try {
             var json = require( path );
+
+            if( json )
+                return json;
+
+            var msg = "-- couldn't load schema. schema is empty. { path : %s , name : %s }";
+            console.error( msg, path, name);
+
+            throw new Error( msg );
         } catch ( err ) {
             console.error( "couldn't load mongo.schema.json { name : %s, path : %j }",
                 name, path );

@@ -34,16 +34,6 @@ exports.setup = function( APP, basicConfig, tables, afterSetup ) {
     // ########################################################
     // ##              private functions/helper
     // ########################################################
-    /*
-    function bindSchemas( tables ) {
-        if( _.isArray(tables)  ) {
-            _.each( tables, function( table ) {
-                 bindSchema(table);
-            });
-        } else {
-            bindSchema( tables )
-        }
-    } */
 
     function bindSchemas( tables ) {
         if( _.isArray(tables)  ) {
