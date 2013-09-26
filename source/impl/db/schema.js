@@ -34,7 +34,7 @@ exports.install = function ( pathPrefix, name ) {
         var json = loadSchemaDef( name, path );
         var schemaDef = new Schema( json );
 
-        var schemaType = mongoose.model( name, schemaDef);
+        var schemaType = mongoose.model( name, schemaDef, name );
 
         return schemaType;
     };
