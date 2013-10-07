@@ -3,10 +3,6 @@ var xml = require( "xml2js" );
 var _ = require( "underscore" );
 var useCallback = require( "../../util/use-callback.js").useCallback;
 
-var iconv = require('iconv-lite');
-// Check if encoding is supported
-// iconv.encodingExists("us-ascii")
-
 
 
 
@@ -23,11 +19,7 @@ var iconv = require('iconv-lite');
  */
 exports.transform = function( input, callback ) {
     try {
-        var inputBuffer = new Buffer(input, 'win1251' /* binary */ );
-        var decoded = iconv.decode(inputBuffer, 'utf8');
-
-        // var encoded = inputBuffer.toString( "UTF-8" );
-        xml.parseString( decoded,
+        xml.parseString( input,
             { trim :true, async : false},
             function (err, result) {
                  if( err ) {
