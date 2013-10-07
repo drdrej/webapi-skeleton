@@ -13,10 +13,10 @@ var useCallback = require( "../../util/use-callback.js").useCallback;
  * @returns {{input: *}}
  */
 exports.transform = function( input, callback ) {
-    // console.log( "skip response-parser. input : " + input );
-
     try {
-        xml.parseString( input,
+        var inputBuffer = new Buffer(input, 'binary' );
+        var encoded = inputBuffer.toString( "UTF-8" );
+        xml.parseString( encoded,
             { trim :true, async : false},
             function (err, result) {
                  if( err ) {
