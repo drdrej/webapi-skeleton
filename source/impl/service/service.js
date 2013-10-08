@@ -219,18 +219,3 @@ var handleResponse = function(response, callback, transformer) {
         }
     });
 };
-
-var Buffer = require( "buffer").Buffer;
-
-var encoding = _.has(transformer, "encoding" ) ? transformer.encoding : "utf8";
-
-console.log( "-- connector.transformer uses " + encoding + " encoding." );
-
-response.on( 'data', function (chunk) {
-    // var decoded = new Buffer( chunk, "binary" );
-    /* : "latin1" */
-
-    var decoded = iconv.decode( chunk, encoding );
-
-    str += decoded;
-});
