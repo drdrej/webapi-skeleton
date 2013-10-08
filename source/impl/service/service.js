@@ -4,6 +4,8 @@
 var http = require( "http" );
 var _ = require( "underscore" );
 var URL = require( "url" );
+var iconv = require( "iconv-lite" );
+
 var useCallback = require( "../util/use-callback.js").useCallback;
 
 /**
@@ -41,10 +43,15 @@ exports.useTransformer = function( opts ) {
 
     if( hasTransf ) {
         this.transformer = opts.transformer;
-        return this;
+    } else {
+        this.transformer = require( "./response/parser-noop.js" );
     }
 
-    this.transformer = require( "./response/parser-noop.js" );
+    if(_.has( opts, "encoding" ) && _.isString(opts.encoding) ) {
+        console.log( "-- transformer will use { encoding : " + opts.encoding + "}." );
+        this.transformer.encoding = opts.encoding;
+    }
+
     return this;
 };
 
@@ -126,6 +133,9 @@ this.request = function( params, body, callback ) {
     var httpOpt = this.buildOptions();
     fillParams(httpOpt, params);
 
+    // -- read as response from service as binary-stream
+    httpOpt.encoding = 'binary';
+
     console.log( "-- use http.options: %j ", httpOpt );
 
     var transformer = this.transformer;
@@ -187,8 +197,14 @@ var handleRequestError = function( error, callback ) {
 var handleResponse = function(response, callback, transformer) {
     var str = '';
 
-    response.on('data', function (chunk) {
-        str += chunk;
+    var Buffer = require( "buffer").Buffer;
+    var encoding = _.has(transformer, "encoding" ) ? transformer.encoding : "utf8";
+
+    console.log( "-- transformer is configured with { encoding : " + encoding + "}." );
+
+    response.on( 'data', function (chunk) {
+        var decoded = iconv.decode( chunk, encoding );
+        str += decoded;
     });
 
     response.on( 'error', function( error ) {
@@ -203,3 +219,18 @@ var handleResponse = function(response, callback, transformer) {
         }
     });
 };
+
+var Buffer = require( "buffer").Buffer;
+
+var encoding = _.has(transformer, "encoding" ) ? transformer.encoding : "utf8";
+
+console.log( "-- connector.transformer uses " + encoding + " encoding." );
+
+response.on( 'data', function (chunk) {
+    // var decoded = new Buffer( chunk, "binary" );
+    /* : "latin1" */
+
+    var decoded = iconv.decode( chunk, encoding );
+
+    str += decoded;
+});

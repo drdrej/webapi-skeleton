@@ -10,7 +10,7 @@ var useCallback = require( "../../util/use-callback.js").useCallback;
 
 
 /**
- * returns the content of a response as a simple json
+ * rxml2jseturns the content of a response as a simple json
  *
  * @param input is a string
  * @param callback - for asynchronous moments.
