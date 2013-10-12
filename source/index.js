@@ -47,8 +47,8 @@ exports.setup = function( options ) {
 
 exports.server = function () {
     this.start = function() {
-       var startServer = require( "./impl/server.js").start;
-       startServer( CONFIG.path, CONFIG.controls );
+        var startServer = require( "./impl/server.js").start;
+        startServer( CONFIG.path, CONFIG.controls );
     };
 
     return this;
@@ -90,12 +90,21 @@ exports.bootApp = function( config, tables ) {
 exports.db = function () {
     checkIsSetupReady();
 
+    // Backref to MongoDB/Mongoose :::
+    // if NULL, then is unbound/not connected
+    this.connection = null;
+
     var uri = CONFIG.mongodb;
     var schemaConfigPathPrefix = CONFIG.schema;
+    var dbFacade = this;
 
     this.connect = function( callback ) {
+        if( !_.isNull(dbFacade.connection) ) return;
+
         var connect = require("./impl/db/connect.js").connect;
-        connect(uri, callback);
+        dbFacade.connection = connect(uri, callback);
+
+        return dbFacade;
     };
 
     this.schema = function( name ) {
@@ -116,6 +125,17 @@ exports.db = function () {
         SCHEMA_REGISRRY[ name ] = rval;
 
         return rval;
+    }
+
+    this.utils = function() {
+        var db = dbFacade.connection;
+
+        this.findById = function( schema, id, isValidInput, isValidResult, mapResult ) {
+            var findById = require( './impl/db/utils/find-by-id.js' );
+            return findById( db, schema, id, isValidInput, isValidResult, mapResult );
+        }
+
+        return this;
     };
 
     return this;
@@ -144,9 +164,9 @@ exports.connector = function ( config ) {
  * Validate configuration before use it.
  */
 function checkIsSetupReady( ) {
-   // if(_.isObject(CONFIG) )
-   // TODO: implement different checks to keep config consistent.
-   // MOTIVATION: to know bugs before as early as possible.
+    // if(_.isObject(CONFIG) )
+    // TODO: implement different checks to keep config consistent.
+    // MOTIVATION: to know bugs before as early as possible.
 };
 
 /**
@@ -172,7 +192,7 @@ exports.response = function() {
     var modulePath = "./impl/response/send-response.js";
 
     try {
-       var handler = require(modulePath);
+        var handler = require(modulePath);
 
         return handler;
     } catch( err ) {

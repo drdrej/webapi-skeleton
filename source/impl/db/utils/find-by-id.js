@@ -1,4 +1,18 @@
 /**
+ * @author: A. Siebert, ask@touchableheroes.com
+ */
+
+var _ = require( "underscore" );
+
+
+var RSVP = require( "rsvp" );
+var when = function( promised ) {
+    return new RSVP.Promise( promised );
+};
+
+
+
+/**
  *
  * @param db - mongoose-db/-connection
  * @param schemaName - string, name of schema
@@ -37,7 +51,7 @@ exports.exec = function( db, schemaName, id, isValidInput, isValidResult, mapRes
 
                             var rval = found;
                             if( mapResult && _.isFunction(mapResult) ) {
-                               rval = mapResult(found);
+                                rval = mapResult(found);
                             }
 
                             return resolve( rval );

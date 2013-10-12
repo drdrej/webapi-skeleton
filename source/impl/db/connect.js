@@ -23,4 +23,6 @@ exports.connect = function ( url, isReady ) {
         if( isReady && _.isFunction(isReady) )
             isReady( db ); // pass db-connection
     });
-}
+
+    return db;
+};
