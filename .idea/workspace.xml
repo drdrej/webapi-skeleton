@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8f1345-11df-4368-be52-8ca26f76720d" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\home\projects\node-restserver-skeleton\npm-debug.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/db/connect.js" afterPath="$PROJECT_DIR$/source/impl/db/connect.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/impl/db/utils/find-by-id.js" afterPath="$PROJECT_DIR$/source/impl/db/utils/find-by-id.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/index.js" afterPath="$PROJECT_DIR$/source/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/package.json" afterPath="$PROJECT_DIR$/source/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="node-restserver-skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,29 +18,29 @@
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/package.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381176452540" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-hello-world.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379412873182" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-rest-search-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379592419893" ignored="false" />
-    <file path="/index.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381596634830" ignored="false" />
-    <file path="/a.dummy" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381241400189" ignored="false" />
+    <file path="/index.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381609082263" ignored="false" />
+    <file path="/a.dummy" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381608751249" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/index.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380187941117" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/server.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379592692579" ignored="false" />
     <file path="/server.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379518918645" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/routes.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381240853877" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/routes.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381597678298" ignored="false" />
     <file path="/basic.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379416350230" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/package.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381240853877" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/README.md" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381240853877" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/package.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381597678298" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/README.md" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381597678298" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/config/routes.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379417383832" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/config/basic.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379417383832" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/config/routes.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380191712361" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/import/import-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379422746885" ignored="false" />
     <file path="/import-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379423259824" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/import/krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380190178097" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/index.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381596634830" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/db/connect.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381595697451" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/index.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381609083755" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/db/connect.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381597678298" ignored="false" />
     <file path="/krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380189852481" ignored="false" />
     <file path="/01-prepare-env.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380094307692" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-db-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379426803495" ignored="false" />
     <file path="/test-db-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379426802755" ignored="false" />
     <file path="/schema.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380188603261" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/db/schema.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381595282293" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/db/schema.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381597678298" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-control-search-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379434764215" ignored="false" />
     <file path="/test-control-search-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379432277199" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/controls/search/krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379697059738" ignored="false" />
@@ -54,7 +51,7 @@
     <file path="/test-rest-search-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379516774027" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/work/mongodb-example-krankenhaus.json.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379512178761" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/work/mongodb-example-krankenhaus.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379512264532" ignored="false" />
-    <file path="/fragment.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381596534300" ignored="false" />
+    <file path="/fragment.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381603398073" ignored="false" />
     <file path="/cache.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379598482513" ignored="false" />
     <file path="/service.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381239112004" ignored="false" />
     <file path="/test-service-endpoint.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379604236899" ignored="false" />
@@ -76,7 +73,7 @@
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/import/data/apotheke-original.xml.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379691773834" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/import/data/apotheke-original.xml" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379691892883" ignored="false" />
     <file path="/apotheke-original.xml" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379691890735" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/service/service.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381240853877" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/service/service.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381597678298" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/service/response/parser-noop.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381240853877" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/util/use-callback.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379693431909" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/service/response/parser-xml.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381240853877" ignored="false" />
@@ -100,7 +97,7 @@
     <file path="/create-logins.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380095622933" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/controls/search/apotheke/apotheke.spec.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380098046418" ignored="false" />
     <file path="/apotheke.spec.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380098005728" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/bootstrap.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381240853877" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/bootstrap.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381597678298" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/config/database/krankenhaus.schema.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380101229978" ignored="false" />
     <file path="/krankenhaus.schema.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380101218815" ignored="false" />
     <file path="$PROJECT_DIR$/../fabrique-query/test/test-simple-api-usage.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380180252209" ignored="false" />
@@ -111,7 +108,7 @@
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/import/create-users.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380190164538" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-rest-login.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380191619191" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/test/test-hello-world.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380189066655" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/controls/hello.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381595282293" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/controls/hello.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381597678298" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/import/import.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380189909004" ignored="false" />
     <file path="/import.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380189909004" ignored="false" />
     <file path="/create-accounts.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380189358882" ignored="false" />
@@ -129,9 +126,9 @@
     <file path="/dictionary.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380198680644" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/controls/search/apotheke-extract-result.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381240299017" ignored="false" />
     <file path="/apotheke-extract-result.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381240282496" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/control/wrapper-lifecycle.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381595282293" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/control/wrapper-lifecycle.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381597678298" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/control/wrapper.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381240853877" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/test/test-api-connector.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381595282293" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/test/test-api-connector.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381597678298" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/test/test-service-exec-backpoint.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381240853877" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/backbone-frontend/js/views/search/krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381241218171" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/backbone-frontend/js/views/navigation.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381241218171" ignored="false" />
@@ -141,13 +138,17 @@
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/backbone-frontend/js/main.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381242029948" ignored="false" />
     <file path="/main.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381241864224" ignored="false" />
     <file path="/buildURL.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381241838206" ignored="false" />
-    <file path="/find-by-id.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381595061076" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/test/01-prepare-env.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381595282293" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/response/send-response.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381595282293" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/test/test-api-load.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381595282293" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/db/utils/find-by-id.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381595364721" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/dao/findAppointmentById.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381596288790" ignored="false" />
+    <file path="/find-by-id.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381609350123" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/test/01-prepare-env.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381597678298" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/response/send-response.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381597678298" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/test/test-api-load.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381597678298" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/db/utils/find-by-id.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381609386415" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/dao/findAppointmentById.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381609202159" ignored="false" />
     <file path="/findAppointmentById.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381596280683" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-dao-delAppointmentById-valid.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381599764331" ignored="false" />
+    <file path="/test-dao-delAppointmentById-valid.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381599763568" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/dao/delAppointmentById.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381600203373" ignored="false" />
+    <file path="/delAppointmentById.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381600032229" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,10 +186,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="-1.0769231">
+            <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="0.048275862">
               <folding />
             </state>
           </provider>
@@ -197,7 +198,7 @@
       <file leaf-file-name="find-by-id.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/impl/db/utils/find-by-id.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="2" selection-start="3653" selection-end="3653" vertical-scroll-proportion="-10.18">
+            <state line="111" column="2" selection-start="3721" selection-end="3721" vertical-scroll-proportion="-37.74">
               <folding />
             </state>
           </provider>
@@ -212,10 +213,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="0" selection-start="4679" selection-end="4679" vertical-scroll-proportion="5.320132">
+            <state line="200" column="0" selection-start="4563" selection-end="4563" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -251,8 +252,8 @@
         <option value="$PROJECT_DIR$/source/impl/db/schema.js" />
         <option value="$PROJECT_DIR$/source/impl/service/response/parser-xml.js" />
         <option value="$PROJECT_DIR$/source/impl/service/service.js" />
-        <option value="$PROJECT_DIR$/source/impl/db/utils/find-by-id.js" />
         <option value="$PROJECT_DIR$/source/impl/db/connect.js" />
+        <option value="$PROJECT_DIR$/source/impl/db/utils/find-by-id.js" />
         <option value="$PROJECT_DIR$/source/index.js" />
         <option value="$PROJECT_DIR$/source/package.json" />
       </list>
@@ -612,7 +613,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32753164" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32753164" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26477188" sideWeight="0.56170887" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26477188" sideWeight="0.56170887" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30379745" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -797,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/impl/db/utils/find-by-id.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="2" selection-start="3653" selection-end="3653" vertical-scroll-proportion="-10.18">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/impl/db/connect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="2" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0">
@@ -811,16 +805,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/package.json">
+    <entry file="file://$PROJECT_DIR$/source/impl/db/utils/find-by-id.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="-1.0769231">
+        <state line="111" column="2" selection-start="3721" selection-end="3721" vertical-scroll-proportion="-37.74">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="0" selection-start="4679" selection-end="4679" vertical-scroll-proportion="5.320132">
+        <state line="200" column="0" selection-start="4563" selection-end="4563" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="20" selection-start="60" selection-end="60" vertical-scroll-proportion="0.048275862">
           <folding />
         </state>
       </provider>

@@ -30,7 +30,7 @@ exports.exec = function( db, schemaName, id, isValidInput, isValidResult, mapRes
         function (resolve, reject) {
             var Model = db.schema( schemaName );
 
-            if( isValidId(id) ) {
+            if( !isValidId(id) ) {
                 console.error( "!! id is invalid: " + id );
                 return reject( "INVALID_ID" );
             }
@@ -78,7 +78,7 @@ var checkParams = function( db, schemaName, id, isValidInput, isValidResult, map
     }
 
     if( !_.isString( schemaName ) ) {
-        console.error( "!! param:schemaName must be a string. but is : %j", schemaName );
+        console.error( "!! param:schemaName must be a string. but is : " + schemaName );
         throw new Error( "INVALID_PARAM: schemaName" );
     }
 
@@ -103,4 +103,10 @@ var checkParams = function( db, schemaName, id, isValidInput, isValidResult, map
         throw new Error( "INVALID_PARAM: mapResult" );
     }
 
+};
+
+
+
+var isValidId = function(id) {
+    return ( _.isString(id) );
 };

@@ -82,6 +82,8 @@ exports.bootApp = function( config, tables ) {
     return this;
 };
 
+exports.mongoConnect = null;
+
 /**
  * DB-API
  *
@@ -90,21 +92,17 @@ exports.bootApp = function( config, tables ) {
 exports.db = function () {
     checkIsSetupReady();
 
-    // Backref to MongoDB/Mongoose :::
-    // if NULL, then is unbound/not connected
-    this.connection = null;
 
     var uri = CONFIG.mongodb;
     var schemaConfigPathPrefix = CONFIG.schema;
-    var dbFacade = this;
 
     this.connect = function( callback ) {
-        if( !_.isNull(dbFacade.connection) ) return;
+        if( !_.isNull(this.mongoConnect) ) return;
 
         var connect = require("./impl/db/connect.js").connect;
-        dbFacade.connection = connect(uri, callback);
+        this.mongoConnect = connect(uri, callback);
 
-        return dbFacade;
+        return this;
     };
 
     this.schema = function( name ) {
@@ -125,15 +123,15 @@ exports.db = function () {
         SCHEMA_REGISRRY[ name ] = rval;
 
         return rval;
-    }
+    };
 
     this.utils = function() {
-        var db = dbFacade.connection;
+        var dbFacade = this;
 
         this.findById = function( schema, id, isValidInput, isValidResult, mapResult ) {
-            var findById = require( './impl/db/utils/find-by-id.js' );
-            return findById( db, schema, id, isValidInput, isValidResult, mapResult );
-        }
+            var command = require( './impl/db/utils/find-by-id.js').exec;
+            return command(dbFacade, schema, id, isValidInput, isValidResult, mapResult );
+        };
 
         return this;
     };
