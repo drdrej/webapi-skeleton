@@ -1,6 +1,6 @@
 {
   "name": "node-restserver-skeleton",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "description": "basic rest-server based on nodejs, restify & mongoose",
   "readmeFilename": "README.md",
   "main": "index.js",
@@ -13,7 +13,9 @@
     "mongoose": "~3.6.19",
     "underscore": "~1.5.2",
     "xml2js": "~0.2.8",
-    "iconv-lite": "~0.2.11"
+    "iconv-lite": "~0.2.11",
+    "rsvp": "~2.0.4",
+    "MD5": "~1.1.0"
   },
   "repository": "",
   "keywords": [
