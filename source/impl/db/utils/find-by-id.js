@@ -10,6 +10,7 @@ var when = function( promised ) {
     return new RSVP.Promise( promised );
 };
 
+var ERR_NOT_FOUND = "ERR_DOC_NOT_FOUND";
 
 
 /**
@@ -40,14 +41,15 @@ exports.exec = function( db, schemaName, id, isValidInput, isValidResult, mapRes
                 Model.findOne( {_id : id })
                     .exec(function (err, found) {
                         if (err) {
-                            console.error("!! couldn't find "+ schemaName + "for { _id : %j }", found );
+                            console.error("!! couldn't find "+ schemaName + "for { _id : %j }", id );
                             console.error("!! exception: %j", err);
 
                             return reject( ERR_NOT_FOUND );
                         }
 
-                        if (isValidResult(found)) {
-                            console.log("-- found " + schemaName + "for { _id : %j }", found );
+                        var isValid = found && !_.isNull(found) && isValidResult(found);
+                        if (isValid) {
+                            console.log("-- found " + schemaName + "for { _id : %j }", id );
 
                             var rval = found;
                             if( mapResult && _.isFunction(mapResult) ) {
@@ -56,13 +58,12 @@ exports.exec = function( db, schemaName, id, isValidInput, isValidResult, mapRes
 
                             return resolve( rval );
                         } else {
-                            console.error("!! couldn't find appoints for member { account: %j, member-refId : %j, }", login, memberRefId );
-
+                            console.error("!! couldn't find "+ schemaName + "for { _id : %j }", id );
                             return reject( ERR_NOT_FOUND );
                         }
                     });
             } catch (error) {
-                console.error("!! couldn't find member { login: %j, member-refId : %j, }", login, memberRefId);
+                console.error("!! couldn't find "+ schemaName + "for { _id : %j }", id);
                 console.log("!! excpetion: %j ", exception);
 
                 return reject( ERR_NOT_FOUND );
