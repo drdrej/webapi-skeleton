@@ -14,8 +14,9 @@ var restify = require('restify');
 exports.start = function( path, controlsPrefix ) {
     var server = restify.createServer();
 
-    server.use(restify.fullResponse());
-    server.use(restify.bodyParser());
+    server.use( restify.CORS( {origins: ['*']}) );
+    server.use( restify.fullResponse() );
+    server.use( restify.bodyParser() );
 
     var routes = require("./routes.js");
     routes.init( server, path, controlsPrefix );
