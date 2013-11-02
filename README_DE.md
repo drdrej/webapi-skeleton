@@ -2,7 +2,7 @@ webapi-skeleton
 ========================
 
         Version: 0.1.0
-        Status:
+        Status:  dev
 
 
 ## Einleitung
@@ -15,12 +15,42 @@ nodejs, mongo, restify, mongoose u.a. Das Ziel dieses Projekts ist die Vereinfac
 
 ## Anwendung
 
+Vor der Verwendung von webapi-skeleton muss mongodb, nodejs  und npm installiert sein.
+
 ### Installation
 Das Projekt webapi-skeleton is packetiert als npm-package. D.h. die Installation ist entsprechend einfach.
 
-```java
-   class Test { }
 ```
+     npm webapi-skeleton --save
+```
+
+### REST-Routen registrieren
+Beispiel siehe /config/routes.json
+
+### Schema registrieren
+Beispiel siehe /config/database/*.schema.json
+
+### Start server
+```JavaScript
+       // import
+       var Skeleton = require( "webapi-skeleton" );
+
+       // setup
+       var app = Skeleton.bootApp( {
+           "config"   : __dirname + "/../config",
+           "controls" : __dirname + "/../impl/controls",
+           "mongodb"  : "mongodb://localhost/restAPP",
+           "schema"   :  __dirname + "/../config/database"
+       }, tables );
+
+       // start
+       app.run( function(app) {
+           // callback after initialization.
+       });
+```
+
+
+
 
 
 ## License

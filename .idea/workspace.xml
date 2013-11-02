@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8f1345-11df-4368-be52-8ca26f76720d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README_DE.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README_DE.md" afterPath="$PROJECT_DIR$/README_DE.md" />
     </list>
     <ignored path="node-restserver-skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -12,14 +11,14 @@
     <file path="/routes.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380031843632" ignored="false" />
     <file path="/connect.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381595696591" ignored="false" />
     <file path="/test-connect-db.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379950314977" ignored="false" />
-    <file path="/README.md" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1383407207847" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/01-prepare-env.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379514679134" ignored="false" />
+    <file path="/README.md" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1383408584251" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/01-prepare-env.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1383407955087" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-connect-db.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379412778271" ignored="false" />
-    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/package.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381176452540" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/package.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1383407921012" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-hello-world.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379412873182" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/test/test-rest-search-krankenhaus.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379592419893" ignored="false" />
     <file path="/index.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381609082263" ignored="false" />
-    <file path="/a.dummy" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381608751249" ignored="false" />
+    <file path="/a.dummy" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1383407901928" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/index.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1380187941117" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/node_modules/node-restserver-skeleton/impl/server.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1382463018987" ignored="false" />
     <file path="/server.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1379518918645" ignored="false" />
@@ -149,7 +148,9 @@
     <file path="/test-dao-delAppointmentById-valid.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381599763568" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/impl/dao/delAppointmentById.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381600203373" ignored="false" />
     <file path="/delAppointmentById.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1381600032229" ignored="false" />
-    <file path="/README_DE.md" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1383407649376" ignored="false" />
+    <file path="/README_DE.md" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1383408417676" ignored="false" />
+    <file path="/package.json" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1383407921012" ignored="false" />
+    <file path="$PROJECT_DIR$/../mobile-knappschaft-app/repository/ks-app/node-backend/setup/setup.js" changelist="4c8f1345-11df-4368-be52-8ca26f76720d" time="1383407945914" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,19 +188,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="19" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+            <state line="10" column="72" selection-start="291" selection-end="291" vertical-scroll-proportion="-0.8920742">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README_DE.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README_DE.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README_DE.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="17" selection-start="538" selection-end="538" vertical-scroll-proportion="0.6020236">
+            <state line="72" column="39" selection-start="41" selection-end="1942" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="01-prepare-env.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/test/01-prepare-env.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="362" selection-end="569" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -237,8 +247,8 @@
         <option value="$PROJECT_DIR$/source/impl/db/utils/find-by-id.js" />
         <option value="$PROJECT_DIR$/source/impl/server.js" />
         <option value="$PROJECT_DIR$/source/package.json" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/README_DE.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -367,7 +377,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -386,36 +396,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node-restserver-skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node-restserver-skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -731,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/test/01-prepare-env.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="4" selection-start="333" selection-end="655" vertical-scroll-proportion="0.41415313">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/config/database/hello.schema.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -786,16 +759,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/source/test/01-prepare-env.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+        <state line="22" column="0" selection-start="362" selection-end="569" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README_DE.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="17" selection-start="538" selection-end="538" vertical-scroll-proportion="0.6020236">
+        <state line="72" column="39" selection-start="41" selection-end="1942" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="72" selection-start="291" selection-end="291" vertical-scroll-proportion="-0.8920742">
           <folding />
         </state>
       </provider>
