@@ -1,4 +1,4 @@
-node-restserver-skeleton
+webapi-skeleton
 ========================
 
         Version: 0.1.0
@@ -8,10 +8,11 @@ node-restserver-skeleton
 ## Abstract
 
 WebApi-skeleton is a stack based on nodejs, mongodb, restify, mongoose &amp; other open source technologies.
-The main goal of this project is to help a developer to create a webapi.
+The main goal of this project is to help a developer to create a webapi. To build a REST-api you can start with this
+skeleton and extend it later with your own code.
 
 
-## Anwendung
+## How to use
 
 First of all you need to install mongodb, nodejs and npm to use this module.
 
@@ -22,11 +23,31 @@ This project is packaged als npm-package. so the installation is easy.
      npm webapi-skeleton --save
 ```
 
-### REST-Routen registrieren
+### Register REST-routes
 Check file /config/routes.json in this module to understand how it works.
 
-### Schema registrieren
+In webapi-skeleton you configure REST-routes in a JSON-File.
+This Example shows how to bind a REST-Endpoint '/hello' with a parameter ':name' to a control ${controls}/'hello.js'.
+Webapi-skeleton resolves the ${controls}-variable as a path to controls.
+
+**Example:**
+```javascript
+{
+    "routes" :  [
+        {
+            "entry" : "/hello/:name",
+            "method" : "get",
+            "control" : "/hello"
+        }
+    ]
+}
+```
+
+
+
+### Register mongoose schema
 Check file /config/database/*.schema.json in this module to understand how it works.
+
 
 ### Start server
 ```JavaScript
@@ -48,7 +69,18 @@ Check file /config/database/*.schema.json in this module to understand how it wo
 ```
 
 
+## You are involved
 
+There are many ways you can help:
+
+1.  use it
+2.  share it
+3.  identify bugs
+4.  fix bugs
+5.  discuss and optimize
+6.  write documentation
+7.  translate
+8.  spent for future development
 
 
 ## License
@@ -67,5 +99,5 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
-write code &amp; have fun!
-Andreas Siebert (aka drdrej)
+*write code &amp; have fun!*
+Andreas Siebert (aka drdrej) / ask@touchableheroes.com

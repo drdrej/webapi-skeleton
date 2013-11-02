@@ -7,7 +7,7 @@ node-restserver-skeleton
 
 
 This skeleton is a small framework to build rest-apps with nodejs/javascript.
-You start with an app-skeleton and extends later it with your code.
+
 
 ## Usage
 
@@ -109,18 +109,6 @@ Thank you to the open-source-world!
 
 
 
-## You are involved
 
-There are many ways to help:
-
-1.  use it
-2.  share it
-3.  identify bugs
-4.  fix bugs
-5.  discuss and optimize
-6.  write documentation
-7.  translate
-8.  pay for usage
-10. spent for future development
 
 
