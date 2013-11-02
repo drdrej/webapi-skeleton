@@ -3,7 +3,8 @@ node-restserver-skeleton
 
 ## Abstract:
 
-This project contains a basic rest-server setup based on nodejs, restify &amp; mongoose.
+WebApi-skeleton is a stack based on nodejs, mongodb, restify, mongoose &amp; other open source technologies.
+The main goal of this project is to help a developer to create a webapi.
 
 
 ## How to use
