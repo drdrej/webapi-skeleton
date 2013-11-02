@@ -1,7 +1,7 @@
 {
-  "name": "node-restserver-skeleton",
-  "version": "0.0.36",
-  "description": "basic rest-server based on nodejs, restify & mongoose",
+  "name": "webapi-skeleton",
+  "version": "0.1.0",
+  "description": "stack based on nodejs, restify & mongoose to create restbased webapis.",
   "readmeFilename": "README.md",
   "main": "index.js",
   "scripts": {
