@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4c8f1345-11df-4368-be52-8ca26f76720d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/README.md" afterPath="$PROJECT_DIR$/source/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="node-restserver-skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -192,7 +190,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.5330033">
+            <state line="86" column="0" selection-start="2226" selection-end="2226" vertical-scroll-proportion="0.5059022">
               <folding />
             </state>
           </provider>
@@ -787,7 +785,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.5330033">
+        <state line="86" column="0" selection-start="2226" selection-end="2226" vertical-scroll-proportion="0.5059022">
           <folding />
         </state>
       </provider>
