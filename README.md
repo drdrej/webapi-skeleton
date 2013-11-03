@@ -11,6 +11,8 @@ WebApi-skeleton is a stack based on nodejs, mongodb, restify, mongoose &amp; oth
 The main goal of this project is to help a developer to create a webapi. To build a REST-api you can start with this
 skeleton and extend it later with your own code.
 
+[![Stories in Ready](https://badge.waffle.io/drdrej/webapi-skeleton.png?label=ready)](http://waffle.io/drdrej/webapi-skeleton)
+
 
 ## How to use
 
