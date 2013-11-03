@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>WebApi-skeleton by drdrej</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>WebApi-skeleton</h1>
+        <p>basic rest-server based on nodejs, restify &amp; mongoose for a simple setup</p>
+        <p class="view"><a href="https://github.com/drdrej/webapi-skeleton">View the Project on GitHub <small>drdrej/webapi-skeleton</small></a></p>
+        <ul>
+          <li><a href="https://github.com/drdrej/webapi-skeleton/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/drdrej/webapi-skeleton/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/drdrej/webapi-skeleton">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="webapi-skeleton" class="anchor" href="#webapi-skeleton"><span class="octicon octicon-link"></span></a>webapi-skeleton</h1>
+
+<pre><code>    Version: 0.1.0
+    Status:  dev
+</code></pre>
+
+<h2>
+<a name="abstract" class="anchor" href="#abstract"><span class="octicon octicon-link"></span></a>Abstract</h2>
+
+<p>WebApi-skeleton is a stack based on nodejs, mongodb, restify, mongoose &amp; other open source technologies.
+The main goal of this project is to help a developer to create a webapi. To build a REST-api you can start with this
+skeleton and extend it later with your own code.</p>
+
+<h2>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h2>
+
+<p>First of all you need to install mongodb, nodejs and npm to use this module.</p>
+
+<h3>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>This project is packaged als npm-package. so the installation is easy.</p>
+
+<pre><code>     npm webapi-skeleton --save
+</code></pre>
+
+<h3>
+<a name="register-rest-routes" class="anchor" href="#register-rest-routes"><span class="octicon octicon-link"></span></a>Register REST-routes</h3>
+
+<p>Check file /config/routes.json in this module to understand how it works.</p>
+
+<p>In webapi-skeleton you configure REST-routes in a JSON-File.
+This Example shows how to bind a REST-Endpoint '/hello' with a parameter ':name' to a control ${controls}/'hello.js'.
+Webapi-skeleton resolves the ${controls}-variable as a path to controls.</p>
+
+<p><strong>Example:</strong></p>
+
+<div class="highlight highlight-javascript"><pre><span class="p">{</span>
+    <span class="s2">"routes"</span> <span class="o">:</span>  <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">"entry"</span> <span class="o">:</span> <span class="s2">"/hello/:name"</span><span class="p">,</span>
+            <span class="s2">"method"</span> <span class="o">:</span> <span class="s2">"get"</span><span class="p">,</span>
+            <span class="s2">"control"</span> <span class="o">:</span> <span class="s2">"/hello"</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3>
+<a name="register-mongoose-schema" class="anchor" href="#register-mongoose-schema"><span class="octicon octicon-link"></span></a>Register mongoose schema</h3>
+
+<p>Check file /config/database/*.schema.json in this module to understand how it works.</p>
+
+<h3>
+<a name="start-server" class="anchor" href="#start-server"><span class="octicon octicon-link"></span></a>Start server</h3>
+
+<div class="highlight highlight-JavaScript"><pre>       <span class="c1">// import</span>
+       <span class="kd">var</span> <span class="nx">Skeleton</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span> <span class="s2">"webapi-skeleton"</span> <span class="p">);</span>
+
+       <span class="c1">// setup</span>
+       <span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">Skeleton</span><span class="p">.</span><span class="nx">bootApp</span><span class="p">(</span> <span class="p">{</span>
+           <span class="s2">"config"</span>   <span class="o">:</span> <span class="nx">__dirname</span> <span class="o">+</span> <span class="s2">"/../config"</span><span class="p">,</span>
+           <span class="s2">"controls"</span> <span class="o">:</span> <span class="nx">__dirname</span> <span class="o">+</span> <span class="s2">"/../impl/controls"</span><span class="p">,</span>
+           <span class="s2">"mongodb"</span>  <span class="o">:</span> <span class="s2">"mongodb://localhost/restAPP"</span><span class="p">,</span>
+           <span class="s2">"schema"</span>   <span class="o">:</span>  <span class="nx">__dirname</span> <span class="o">+</span> <span class="s2">"/../config/database"</span>
+       <span class="p">},</span> <span class="nx">tables</span> <span class="p">);</span>
+
+       <span class="c1">// start</span>
+       <span class="nx">app</span><span class="p">.</span><span class="nx">run</span><span class="p">(</span> <span class="kd">function</span><span class="p">(</span><span class="nx">app</span><span class="p">)</span> <span class="p">{</span>
+           <span class="c1">// callback after initialization.</span>
+       <span class="p">});</span>
+</pre></div>
+
+<h2>
+<a name="you-are-involved" class="anchor" href="#you-are-involved"><span class="octicon octicon-link"></span></a>You are involved</h2>
+
+<p>There are many ways you can help:</p>
+
+<ol>
+<li> use it</li>
+<li> share it</li>
+<li> identify bugs</li>
+<li> fix bugs</li>
+<li> discuss and optimize</li>
+<li> write documentation</li>
+<li> translate</li>
+<li> spent for future development</li>
+</ol><p>This project is open-source and free, so if you use it or simply like it you are welcome to donate.
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=D7GL3MAY2KYLG"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate"></a></p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Copyright 2013 Andreas Siebert / <a href="mailto:ask@touchableheroes.com">ask@touchableheroes.com</a></p>
+
+<p>Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at</p>
+
+<pre><code>http://www.apache.org/licenses/LICENSE-2.0
+</code></pre>
+
+<p>Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</p>
+
+<p><em>write code &amp; have fun!</em>
+Andreas Siebert (aka drdrej) / <a href="mailto:ask@touchableheroes.com">ask@touchableheroes.com</a></p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/drdrej">drdrej</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
