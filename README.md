@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/drdrej/webapi-skeleton.png?label=ready)](https://waffle.io/drdrej/webapi-skeleton)  
 webapi-skeleton
 ========================
 
