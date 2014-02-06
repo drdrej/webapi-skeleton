@@ -97,7 +97,7 @@ If you not like to donate for this project you are welcome to say *"thank you"* 
 - Restify
 - NodeJS
 
-... or one of other small tool's i've used in this project (check the dependencies).
+... or one of other small tool's/utils/libs/frameworks I've used in this project (check the dependencies).
 
 
 ## Adoption
