@@ -1,11 +1,13 @@
 webapi-skeleton
 ========================
 
-        Version: 0.1.0
+        Version: 0.1.1
         Status:  dev
 
 
 ## Abstract
+
+[![NPM](https://nodei.co/npm/webapi-skeleton.png)](https://nodei.co/npm/webapi-skeleton/)
 
 WebApi-skeleton is a stack based on nodejs, mongodb, restify, mongoose &amp; other open source technologies.
 The main goal of this project is to help a developer to create a webapi. To build a REST-api you can start with this
@@ -89,7 +91,7 @@ This project is open-source and free, so if you use it or simply like it you are
 
 
 ## Adoption
-[![NPM](https://nodei.co/npm/webapi-skeleton.png)](https://nodei.co/npm/webapi-skeleton/)
+
 
 ## License
 Copyright 2013 Andreas Siebert / ask@touchableheroes.com
