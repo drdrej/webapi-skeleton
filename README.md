@@ -88,6 +88,9 @@ This project is open-source and free, so if you use it or simply like it you are
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D7GL3MAY2KYLG)
 
 
+## Adoption
+[![NPM](https://nodei.co/npm/webapi-skeleton.png)](https://nodei.co/npm/webapi-skeleton/)
+
 ## License
 Copyright 2013 Andreas Siebert / ask@touchableheroes.com
 
