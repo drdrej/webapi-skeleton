@@ -92,7 +92,7 @@ This project is open-source and free, so if you use it or simply like it you are
 
 
 ## Adoption
-
+[![NPM](https://nodei.co/npm-dl/webapi-skeleton.png)](https://nodei.co/npm/webapi-skeleton/)
 
 ## License
 Copyright 2013 Andreas Siebert / ask@touchableheroes.com
