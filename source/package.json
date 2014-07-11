@@ -1,33 +1,32 @@
 {
-    "name": "webapi-skeleton",
-    "version": "0.1.1",
-    "description": "stack based on nodejs, restify & mongoose to create restbased webapis.",
-    "readmeFilename": "README.md",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "dependencies": {
-        "restify": "~2.6.0",
-        "mocha": "~1.13.0",
-        "mongoose": "~3.6.19",
-        "underscore": "~1.5.2",
-        "xml2js": "~0.2.8",
-        "iconv-lite": "~0.2.11",
-        "rsvp": "~2.0.4",
-        "MD5": "~1.1.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/drdrej/webapi-skeleton.git"
-    },
-    "keywords": [
-        "basic",
-        "setup",
-        "rest",
-        "app",
-        "skeleton"
-    ],
-    "author": "drdrej",
-    "license": "Apache License 2"
+  "name": "webapi-skeleton",
+  "version": "0.1.1",
+  "description": "stack based on nodejs, restify & mongoose to create restbased webapis.",
+  "readmeFilename": "README.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "restify": "*",
+    "mongoose": "*",
+    "underscore": "*",
+    "xml2js": "*",
+    "iconv-lite": "*",
+    "rsvp": "*",
+    "MD5": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drdrej/webapi-skeleton.git"
+  },
+  "keywords": [
+    "basic",
+    "setup",
+    "rest",
+    "app",
+    "skeleton"
+  ],
+  "author": "drdrej",
+  "license": "Apache License 2"
 }
