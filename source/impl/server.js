@@ -14,18 +14,39 @@ var restify = require('restify');
 exports.start = function( path, controlsPrefix ) {
     var server = restify.createServer();
 
-    server.use( restify.CORS( {origins: ['*']}) );
-    server.use( restify.fullResponse() );
-    server.use( restify.bodyParser() );
+    var config = load( path, './webapi-skeleton.json' );
+
+    if( config && config.server ) {
+        if( config.server.CORS )
+            server.use(restify.CORS({origins: ['*']}));
+
+        if( config.server.fullResponse)
+            server.use(restify.fullResponse());
+
+        if( config.server.bodyParser )
+            server.use(restify.bodyParser());
+    }
+/*
+    server.use(function(req, res, next) {
+        if (req.query.key == null) {
+            console.log("No API key supplied");
+            return next(new restify.NotAuthorizedError("No API key supplied"));
+        } else return next();
+    });
+*/
 
     var routes = require("./routes.js");
     routes.init( server, path, controlsPrefix );
 
-    gogogo(server, 8080);
+    run(server, 8080);
 };
 
-function gogogo( server, port ) {
+var run = function ( server, port ) {
     server.listen(port, function() {
         console.log('%s listening at %s', server.name, server.url);
     });
+};
+
+var load = function( path, file ) {
+   return require( path + '/' + file );
 };

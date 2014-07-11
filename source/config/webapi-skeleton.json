@@ -1,0 +1,7 @@
+{
+   "server" : {
+       "CORS" : true,
+       "fullResponse" : true,
+       "bodyParser" : true
+   }
+}

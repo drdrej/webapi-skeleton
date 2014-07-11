@@ -1,6 +1,6 @@
 {
   "name": "webapi-skeleton",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "stack based on nodejs, restify & mongoose to create restbased webapis.",
   "readmeFilename": "README.md",
   "main": "index.js",
