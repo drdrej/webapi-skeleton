@@ -20,7 +20,7 @@ First of all you need to install mongodb, nodejs and npm to use this module.
 This project is packaged als npm-package. so the installation is easy.
 
 ```
-     npm webapi-skeleton --save
+     >npm install webapi-skeleton --save
 ```
 
 ### Register REST-routes
